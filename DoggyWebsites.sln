@@ -14,6 +14,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D03907
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{75FB31CD-79EB-4608-8DFB-2C9EE0BD0D61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{7700E7E8-EBCC-481C-A4FE-CC22DF60BD02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{81A8E339-E74A-4586-9FA6-FB00A41ECD58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CliftonAgility", "Presentation\CliftonAgility\CliftonAgility\CliftonAgility.csproj", "{C7D9FFEA-F462-4FCE-A21F-3A47E5DC6F97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BristolBallistics", "Presentation\BristolBallistics\BristolBallistics.csproj", "{C6021561-5E98-42A7-88D0-9CD3B852D680}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,8 +38,22 @@ Global
 		{68D532EB-3187-46A7-AB5D-A2577CC6B93D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68D532EB-3187-46A7-AB5D-A2577CC6B93D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68D532EB-3187-46A7-AB5D-A2577CC6B93D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7D9FFEA-F462-4FCE-A21F-3A47E5DC6F97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7D9FFEA-F462-4FCE-A21F-3A47E5DC6F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7D9FFEA-F462-4FCE-A21F-3A47E5DC6F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7D9FFEA-F462-4FCE-A21F-3A47E5DC6F97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6021561-5E98-42A7-88D0-9CD3B852D680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6021561-5E98-42A7-88D0-9CD3B852D680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6021561-5E98-42A7-88D0-9CD3B852D680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6021561-5E98-42A7-88D0-9CD3B852D680}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F9E15FB-4737-4756-8402-60EACEEE2F67} = {75FB31CD-79EB-4608-8DFB-2C9EE0BD0D61}
+		{68D532EB-3187-46A7-AB5D-A2577CC6B93D} = {75FB31CD-79EB-4608-8DFB-2C9EE0BD0D61}
+		{C7D9FFEA-F462-4FCE-A21F-3A47E5DC6F97} = {81A8E339-E74A-4586-9FA6-FB00A41ECD58}
+		{C6021561-5E98-42A7-88D0-9CD3B852D680} = {81A8E339-E74A-4586-9FA6-FB00A41ECD58}
 	EndGlobalSection
 EndGlobal
