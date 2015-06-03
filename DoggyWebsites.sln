@@ -20,7 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{7700E7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{81A8E339-E74A-4586-9FA6-FB00A41ECD58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CliftonAgility", "Presentation\CliftonAgility\CliftonAgility\CliftonAgility.csproj", "{C7D9FFEA-F462-4FCE-A21F-3A47E5DC6F97}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CliftonAgility", "Presentation\CliftonAgility\CliftonAgility.csproj", "{C7D9FFEA-F462-4FCE-A21F-3A47E5DC6F97}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BristolBallistics", "Presentation\BristolBallistics\BristolBallistics.csproj", "{C6021561-5E98-42A7-88D0-9CD3B852D680}"
 EndProject
