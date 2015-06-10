@@ -7,7 +7,7 @@
     <meta name="description" content="Dog agility club based in South Bristol">
     <meta name="author" content="Mark den Dunnen">
 
-    <title>@ViewBag.Title - Clifton Agility Club</title>
+    <title>@(string.IsNullOrEmpty(ViewBag.Title) ? "Clifton Agility Club" : ViewBag.Title + " - Clifton Agility Club")</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     

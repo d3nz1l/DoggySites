@@ -201,6 +201,7 @@
     <Content Include="Content\images\agility-tunnel.png" />
     <Content Include="Content\images\ClubLogo.png" />
     <Content Include="Content\images\ClubLogo90.png" />
+    <Content Include="Content\images\loki-jumping.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -349,6 +350,8 @@
     <Content Include="Views\Shared\_LayoutFixedWidth.cshtml" />
     <Content Include="Views\Shared\_LayoutSingleColumn.cshtml" />
     <Content Include="Views\Shared\_LayoutWithHeader.cshtml" />
+    <Content Include="Views\Shared\_WraxallShowBanner.cshtml" />
+    <Content Include="Views\Home\_TheTrainers.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
