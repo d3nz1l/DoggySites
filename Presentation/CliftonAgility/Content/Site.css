@@ -49,3 +49,9 @@ header {
         height: 233px;
     }
 }
+
+.btn .glyphicon {
+    font-size: 18px;
+    vertical-align: sub;
+    margin: 0 10px;
+}

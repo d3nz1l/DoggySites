@@ -1,26 +1,36 @@
 ﻿@{
     ViewBag.Title = "Home Page";
-    ViewBag.HeaderText = ""
+    ViewBag.HeaderText = "Friendly agility training for Bristol and Somerset";
 }
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+        <h2>About Us</h2>
+        <p>We are friendly, KC registered, club run by a bunch agility enthuisiasts. We are based in North Somerset and cover all surrounding areas.</p>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            <a class="btn btn-success" href="@Url.Action("About", "Home")">
+                Learn More<span class="glyphicon glyphicon-info-sign"></span>
+            </a>
         </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>Membership</h2>
+        <p>
+            Looking to start agility with your dog, or would to join with your existing agility dog. Whether you just want to train for fun, or for competition, get in contact with us. 
+        </p>
+        <p>
+            <a class="btn btn-success" href="@Url.Action("Index", "Membership")">
+                Membership<span class="glyphicon glyphicon-user"></span>
+            </a>
+        </p>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>Where Are We</h2>
+        <p>Looking for our venue? We are based in Chelvey, North Somerset. For full details, including our address, directions and maps, go here.</p>
+        <p>
+            <a class="btn btn-success" href="@Url.Action("OurVenue", "Home")">
+                Find Us<span class="glyphicon glyphicon-globe"></span>
+            </a>
+        </p>
     </div>
 </div>

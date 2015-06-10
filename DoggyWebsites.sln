@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CliftonAgility", "Presentat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BristolBallistics", "Presentation\BristolBallistics\BristolBallistics.csproj", "{C6021561-5E98-42A7-88D0-9CD3B852D680}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Presentation\Common\Common.csproj", "{8D91CF10-D912-4DA6-9354-4ED04BAFEC0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +48,10 @@ Global
 		{C6021561-5E98-42A7-88D0-9CD3B852D680}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6021561-5E98-42A7-88D0-9CD3B852D680}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6021561-5E98-42A7-88D0-9CD3B852D680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D91CF10-D912-4DA6-9354-4ED04BAFEC0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D91CF10-D912-4DA6-9354-4ED04BAFEC0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D91CF10-D912-4DA6-9354-4ED04BAFEC0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D91CF10-D912-4DA6-9354-4ED04BAFEC0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +61,6 @@ Global
 		{68D532EB-3187-46A7-AB5D-A2577CC6B93D} = {75FB31CD-79EB-4608-8DFB-2C9EE0BD0D61}
 		{C7D9FFEA-F462-4FCE-A21F-3A47E5DC6F97} = {81A8E339-E74A-4586-9FA6-FB00A41ECD58}
 		{C6021561-5E98-42A7-88D0-9CD3B852D680} = {81A8E339-E74A-4586-9FA6-FB00A41ECD58}
+		{8D91CF10-D912-4DA6-9354-4ED04BAFEC0D} = {81A8E339-E74A-4586-9FA6-FB00A41ECD58}
 	EndGlobalSection
 EndGlobal
