@@ -1,17 +1,128 @@
-﻿@{
-    ViewBag.Title = "Contact";
+﻿@model CliftonAgility.Models.Contact.MessageForm
+
+@using CliftonAgility.Helpers
+@{
+    ViewBag.Title = "Contact Us";
+    ViewBag.HeaderText = "Got a question or comment? Let us know using the here.";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<div class="row">
+    <div class="col-md-8">
+
+        <h2>Send Us a Message</h2>
+        <p>
+            <b class="glyphicon glyphicon-asterisk"></b> - required field
+        </p>
+        @using (Html.BeginForm("Contact", "Home", FormMethod.Post, new { @class = "form-horizontal" }))
+        {
+            @Html.ValidationSummary(true, "")
+            
+            <div class="form-group">
+                <label class="col-sm-3 control-label">@Html.LabelFor(m => m.Name)</label>
+                <div class="col-sm-9">
+                    <div class="input-group">
+                        @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Your Name" })
+                        <span class="input-group-addon"><b class="glyphicon glyphicon-asterisk"></b></span>
+                    </div>
+                    <div class="error-message text-success">
+                        @Html.ValidationMessageFor(m => m.Name)
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">@Html.LabelFor(m => m.EmailAddress)</label>
+                <div class="col-sm-9">
+                    <div class="input-group">
+                        @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control", placeholder = "Your Email Address" })
+                        <span class="input-group-addon"><b class="glyphicon glyphicon-asterisk"></b></span>
+                    </div>
+                    <div class="error-message">
+                        @Html.ValidationMessageFor(m => m.EmailAddress)
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">@Html.LabelFor(m => m.TelephoneNumber)</label>
+                <div class="col-sm-9">
+                    @Html.TextBoxFor(m => m.TelephoneNumber, new { @class = "form-control", placeholder = "Your Phone Number (Optional)" })
+                    <div class="error-message">
+                        @Html.ValidationMessageFor(m => m.TelephoneNumber)
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">@Html.LabelFor(m => m.MessageType)</label>
+                <div class="col-sm-9">
+                    <div class="input-group">
+                        @Html.EnumDropDownListFor(m => m.MessageType, "Select a question...", new { @class = "form-control" })
+                        <span class="input-group-addon"><b class="glyphicon glyphicon-asterisk"></b></span>
+                    </div>
+                    <div class="error-message">
+                        @Html.ValidationMessageFor(m => m.MessageType)
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">@Html.LabelFor(m => m.Message)</label>
+                <div class="col-sm-9">
+                    <div class="input-group">
+                        @Html.TextAreaFor(m => m.Message, new { @class = "form-control", placeholder = "Your message..." })
+                        <span class="input-group-addon"><b class="glyphicon glyphicon-asterisk"></b></span>
+                    </div>
+                    <div class="error-message">
+                        @Html.ValidationMessageFor(m => m.Message)
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                    <button type="submit" class="btn btn-success">Send Message<b class="glyphicon glyphicon-envelope"></b></button>
+                </div>
+            </div>
+        }
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="well">
+            <h2>Email Us</h2>
+            <p>
+                Prefer to send us an email?
+            </p>
+            <address>
+                <strong>Information/Comments:</strong><br /><a href="mailto:@EmailAddresses.Information">@EmailAddresses.Information</a>
+                <br />
+                <strong>Membership Questions:</strong><br /><a href="mailto:@EmailAddresses.Membership">@EmailAddresses.Membership</a>
+            </address>
+        </div>
+
+        <div class="well">
+            <h2>Membership Form</h2>
+            <p>Looking to join the club? The new members form can be found here...</p>
+            <p>
+                <a class="btn btn-success" href="@Url.Action("Index", "Membership")">
+                    New Members<span class="glyphicon glyphicon-user"></span>
+                </a>
+            </p>
+        </div>
+        <div class="well">
+            <h2>@Html.ActionLink("Our Venue", "OurVenue", "Home")</h2>
+            <p>Looking for our venue?</p>
+            <address>
+                Chelvey Court Farm<br />
+                Chelvey Road<br />
+                Backwell<br />
+                Near Bristol<br />
+                BS48 4AA
+            </address>
+        </div>
+    </div>
+</div>
+<div class="row">
+
+</div>

@@ -1,0 +1,28 @@
+﻿@model CliftonAgility.Models.Emails.ContactUsEmail
+Content-Type: text/html; charset=utf-8
+
+<html>
+    @Html.Partial("_SharedStyles")
+    <body>
+        <p>Hi</p>
+        <p>We have a message from cliftonagility.co.uk</p>
+        <table>
+            <tr>
+                <th>Name:</th>
+                <td>@Model.Name</td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td><a href="mailto:?@Model.EmailAddress">@Model.EmailAddress</a></td>
+            </tr>
+            <tr>
+                <th>Phone:</th>
+                <td>@Model.PhoneNumber</td>
+            </tr>
+            <tr>
+                <th>Message:</th>
+                <td>@Model.Message</td>
+            </tr>
+        </table>
+    </body>
+</html>

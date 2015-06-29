@@ -1,0 +1,11 @@
+C:\GitHub\DoggySites\Domain\Email\bin\Debug\Email.dll
+C:\GitHub\DoggySites\Domain\Email\bin\Debug\Email.pdb
+C:\GitHub\DoggySites\Domain\Email\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\GitHub\DoggySites\Domain\Email\bin\Debug\Microsoft.Practices.Unity.dll
+C:\GitHub\DoggySites\Domain\Email\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\GitHub\DoggySites\Domain\Email\bin\Debug\Microsoft.Practices.Unity.xml
+C:\GitHub\DoggySites\Domain\Email\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\GitHub\DoggySites\Domain\Email\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\GitHub\DoggySites\Domain\Email\obj\Debug\Email.csprojResolveAssemblyReference.cache
+C:\GitHub\DoggySites\Domain\Email\obj\Debug\Email.dll
+C:\GitHub\DoggySites\Domain\Email\obj\Debug\Email.pdb

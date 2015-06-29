@@ -45,6 +45,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Elmah">
+      <HintPath>..\..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah.Mvc">
+      <HintPath>..\..\packages\Elmah.Mvc.2.1.2\lib\net40\Elmah.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
@@ -105,6 +111,12 @@
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Postal">
+      <HintPath>..\..\packages\Postal.Mvc5.1.2.0\lib\net45\Postal.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorEngine">
+      <HintPath>..\..\packages\RazorEngine.3.4.1\lib\net45\RazorEngine.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -181,13 +193,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\EmailAddresses.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Contact\MessageForm.cs" />
+    <Compile Include="Models\Contact\MessageType.cs" />
+    <Compile Include="Models\Emails\BaseEmail.cs" />
+    <Compile Include="Models\Emails\ContactUsConfirmationEmail.cs" />
+    <Compile Include="Models\Emails\ContactUsEmail.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Readme\Elmah.txt" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\BootstrapSource\bootstrap.css" />
@@ -200,7 +219,9 @@
     <Content Include="Content\BootstrapSource\variables.css" />
     <Content Include="Content\images\agility-tunnel.png" />
     <Content Include="Content\images\ClubLogo.png" />
+    <Content Include="Content\images\ClubLogo60.png" />
     <Content Include="Content\images\ClubLogo90.png" />
+    <Content Include="Content\images\committee.jpg" />
     <Content Include="Content\images\loki-jumping.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -285,10 +306,12 @@
     <Content Include="Content\BootstrapSource\MixIns\text-emphasis.less" />
     <Content Include="Content\BootstrapSource\MixIns\text-overflow.less" />
     <Content Include="Content\BootstrapSource\MixIns\vendor-prefixes.less" />
+    <Content Include="Content\BootstrapSource\Validation.less" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Icon.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\custom-validation.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Scripts\jquery-2.1.4.min.map" />
@@ -352,15 +375,28 @@
     <Content Include="Views\Shared\_LayoutWithHeader.cshtml" />
     <Content Include="Views\Shared\_WraxallShowBanner.cshtml" />
     <Content Include="Views\Home\_TheTrainers.cshtml" />
+    <Content Include="Views\Home\_TheCommittee.cshtml" />
+    <Content Include="Views\Emails\Web.config" />
+    <Content Include="Views\Emails\_ViewStart.cshtml" />
+    <Content Include="Views\Emails\_LayoutEmail.cshtml" />
+    <Content Include="Views\Emails\ContactUs.Text.cshtml" />
+    <Content Include="Views\Emails\ContactUs.Html.cshtml" />
+    <Content Include="Views\Emails\ContactUs.cshtml" />
+    <Content Include="Views\Emails\_SharedStyles.cshtml" />
+    <Content Include="Views\Home\ThankYou.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\Contact\EditorTemplates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Domain\Email\Email.csproj">
+      <Project>{F7F91E2F-1926-49C1-974F-A2B4E3005667}</Project>
+      <Name>Email</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{8d91cf10-d912-4da6-9354-4ed04bafec0d}</Project>
       <Name>Common</Name>

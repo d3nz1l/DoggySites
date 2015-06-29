@@ -1,0 +1,22 @@
+﻿
+@background-color: lighten(@brand-danger, 40%);
+@border-color: lighten(@brand-danger, 20%);
+
+
+.input-validation-error {
+
+    .error-message, .control-label {
+        color: @brand-danger;
+        font-weight: 600;
+    }
+
+    input, select, textarea {
+        background-color: @background-color;
+        border-color: @border-color;
+
+        & + span.input-group-addon {
+            border-color: @border-color;
+            color: @brand-danger;
+        }
+    }
+}

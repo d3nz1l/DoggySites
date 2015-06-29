@@ -1,0 +1,10 @@
+C:\GitHub\DoggySites\Doggy.Persistence\bin\Debug\Doggy.Persistence.dll.config
+C:\GitHub\DoggySites\Doggy.Persistence\bin\Debug\Doggy.Persistence.dll
+C:\GitHub\DoggySites\Doggy.Persistence\bin\Debug\Doggy.Persistence.pdb
+C:\GitHub\DoggySites\Doggy.Persistence\bin\Debug\EntityFramework.dll
+C:\GitHub\DoggySites\Doggy.Persistence\bin\Debug\EntityFramework.SqlServer.dll
+C:\GitHub\DoggySites\Doggy.Persistence\bin\Debug\EntityFramework.xml
+C:\GitHub\DoggySites\Doggy.Persistence\bin\Debug\EntityFramework.SqlServer.xml
+C:\GitHub\DoggySites\Doggy.Persistence\obj\Debug\Doggy.Persistence.csprojResolveAssemblyReference.cache
+C:\GitHub\DoggySites\Doggy.Persistence\obj\Debug\Doggy.Persistence.dll
+C:\GitHub\DoggySites\Doggy.Persistence\obj\Debug\Doggy.Persistence.pdb

@@ -65,3 +65,9 @@ C:\GitHub\DoggySites\Presentation\CliftonAgility\bin\DoggySites.Presentation.Com
 C:\GitHub\DoggySites\Presentation\CliftonAgility\bin\DoggySites.Presentation.Common.pdb
 C:\GitHub\DoggySites\Presentation\CliftonAgility\bin\Menu\Menu.xsd
 C:\GitHub\DoggySites\Presentation\CliftonAgility\bin\Views\Shared\TopMenu.xml
+C:\GitHub\DoggySites\Presentation\CliftonAgility\bin\Elmah.dll
+C:\GitHub\DoggySites\Presentation\CliftonAgility\bin\Elmah.Mvc.dll
+C:\GitHub\DoggySites\Presentation\CliftonAgility\bin\Email.dll
+C:\GitHub\DoggySites\Presentation\CliftonAgility\bin\Microsoft.Practices.Unity.dll
+C:\GitHub\DoggySites\Presentation\CliftonAgility\bin\Email.pdb
+C:\GitHub\DoggySites\Presentation\CliftonAgility\bin\Microsoft.Practices.Unity.xml

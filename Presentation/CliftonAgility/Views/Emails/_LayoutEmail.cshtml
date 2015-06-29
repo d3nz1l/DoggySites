@@ -1,0 +1,9 @@
+﻿@model CliftonAgility.Models.Emails.BaseEmail
+           
+To: @Model.To
+From: @Model.From
+Reply-To: @Model.ReplyTo
+Subject: @Model.Subject
+Views: Text, Html
+
+@RenderBody()
