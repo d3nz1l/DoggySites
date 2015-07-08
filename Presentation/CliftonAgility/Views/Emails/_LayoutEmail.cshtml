@@ -1,9 +1,7 @@
-﻿@model CliftonAgility.Models.Emails.BaseEmail
-           
+﻿@using CliftonAgility.Helpers
+@model CliftonAgility.Models.Emails.BaseEmail
 To: @Model.To
-From: @Model.From
+From: Clifton Agility Club <@Model.From>
 Reply-To: @Model.ReplyTo
-Subject: @Model.Subject
-Views: Text, Html
-
-@RenderBody()
+subject: @Model.Subject
+Views: Text, Html @RenderBody()

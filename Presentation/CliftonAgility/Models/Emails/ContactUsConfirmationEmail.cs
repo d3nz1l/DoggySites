@@ -11,6 +11,8 @@ namespace CliftonAgility.Models.Emails
 {
     using System.Globalization;
 
+    using CliftonAgility.Helpers;
+
     /// <summary>
     /// The contact us email.
     /// </summary>

@@ -65,3 +65,30 @@ header {
     padding-top: 60px;
 }
 
+.clone-header-template {
+    display: none;
+}
+
+.btn.pull-right {
+    margin-right: 10px;
+}
+
+legend {
+    width: 100%;
+    border-bottom: solid 1px #333;
+}
+
+/*Members dog header*/
+/*Start*/
+
+.members-dog-top {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.header-actions {
+    font-size: 20px;
+}
+
+/*Finish*/
+/*Members dog header*/

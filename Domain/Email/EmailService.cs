@@ -7,13 +7,15 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Email
+namespace DoggySites.Email
 {
     using System;
     using System.Collections.Generic;
     using System.Net;
     using System.Net.Mail;
     using System.Threading.Tasks;
+
+    using global::Email;
 
     using Microsoft.Practices.ObjectBuilder2;
 

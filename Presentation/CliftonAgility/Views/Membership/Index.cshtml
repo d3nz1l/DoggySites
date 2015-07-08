@@ -1,0 +1,124 @@
+﻿@model CliftonAgility.Models.Membership.EnquiryForm
+
+@using CliftonAgility.Helpers
+@{
+    ViewBag.Title = "Membership Form";
+    ViewBag.HeaderText = "Want to become a member? Fill out this form and we'll be in touch.";
+}
+
+<div class="row">
+    <div class="col-md-8">
+
+        <h2>Membership Form</h2>
+        <p>
+            <b class="glyphicon glyphicon-asterisk"></b> - required field
+        </p>
+        @using (Html.BeginForm("Index", "Membership", FormMethod.Post, new { @class = "form-horizontal" }))
+        {
+            @Html.ValidationSummary(true, "")
+            <fieldset>
+                <legend>Your Details</legend>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">@Html.LabelFor(m => m.Forename)</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            @Html.TextBoxFor(m => m.Forename, new { @class = "form-control", placeholder = "Your Forename" })
+                            <span class="input-group-addon"><b class="glyphicon glyphicon-asterisk"></b></span>
+                        </div>
+                        <div class="error-message">
+                            @Html.ValidationMessageFor(m => m.Forename)
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">@Html.LabelFor(m => m.Surname)</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            @Html.TextBoxFor(m => m.Surname, new { @class = "form-control", placeholder = "Your Surname" })
+                            <span class="input-group-addon"><b class="glyphicon glyphicon-asterisk"></b></span>
+                        </div>
+                        <div class="error-message">
+                            @Html.ValidationMessageFor(m => m.Surname)
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">@Html.LabelFor(m => m.EmailAddress)</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control", placeholder = "Your Email Address" })
+                            <span class="input-group-addon"><b class="glyphicon glyphicon-asterisk"></b></span>
+                        </div>
+                        <div class="error-message">
+                            @Html.ValidationMessageFor(m => m.EmailAddress)
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">@Html.LabelFor(m => m.TelephoneNumber)</label>
+                    <div class="col-sm-9">
+                        @Html.TextBoxFor(m => m.TelephoneNumber, new { @class = "form-control", placeholder = "Your Phone Number (Optional)" })
+                        <div class="error-message">
+                            @Html.ValidationMessageFor(m => m.TelephoneNumber)
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">@Html.LabelFor(m => m.Address)</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            @Html.TextAreaFor(m => m.Address, new { @class = "form-control", placeholder = "Your Address" })
+                            <span class="input-group-addon"><b class="glyphicon glyphicon-asterisk"></b></span>
+                        </div>
+                        <div class="error-message">
+                            @Html.ValidationMessageFor(m => m.Address)
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Your Dogs</legend>
+                <div class="cloneable" data-remote-action="/membership/membersdog" data-id-regex="MembersDogs\[.+\]\." data-id-template="MembersDogs[#id#].">
+                    <div class="cloneable-summary">
+                        <h4 class="summary-title" style="display:none;">Added Dogs</h4>
+                    </div>
+                    <div class="clone-header-template">
+                        @Html.Partial("_MembersDogHeader")
+                    </div>
+                    <div class="well">
+                        <div class="cloneable-container">
+                            @Html.EditorFor(m => m.MembersDogs)
+                        </div>
+                        <div class="cloneable-actions row">
+                            <a href="#" class="btn btn-sm btn-success pull-right clone-submit">Add a Dog</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9">
+                        <button type="submit" class="btn btn-success pull-right">Send Message<b class="glyphicon glyphicon-envelope"></b></button>
+                    </div>
+                </div>
+            </fieldset>
+        }
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="well">
+            <h2>Contact Us</h2>
+            <p>
+                Got a question? Contact us here...
+            </p>
+            <p>
+                <a class="btn btn-success" href="@Url.Action("Contact", "Home")">
+                    Contact Us<span class="glyphicon glyphicon-question-sign"></span>
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="row">
+
+</div>

@@ -6,12 +6,13 @@
 //   The home controller.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
+
 namespace CliftonAgility.Controllers
 {
-    using System.Security.Policy;
     using System.Threading.Tasks;
     using System.Web.Mvc;
 
+    using CliftonAgility.Helpers;
     using CliftonAgility.Models.Contact;
     using CliftonAgility.Models.Emails;
 
@@ -69,13 +70,16 @@ namespace CliftonAgility.Controllers
         /// <summary>
         /// The contact.
         /// </summary>
+        /// <param name="model">
+        /// The model.
+        /// </param>
         /// <returns>
         /// The <see cref="ActionResult"/>.
         /// </returns>
         [HttpPost]
-        public Task<ActionResult> Contact(MessageForm model)
+        public async Task<ActionResult> Contact(MessageForm model)
         {
-            if (!ModelState.IsValid)
+            if (!this.ModelState.IsValid)
             {
                 return this.View(model);
             }
@@ -84,27 +88,34 @@ namespace CliftonAgility.Controllers
 
             var message = new ContactUsEmail(model.EmailAddress, siteEmailAddress)
                             {
-                                Name = model.Name,
-                                EmailAddress = model.EmailAddress,
-                                PhoneNumber = model.TelephoneNumber,
+                                Name = model.Name, 
+                                EmailAddress = model.EmailAddress, 
+                                PhoneNumber = model.TelephoneNumber, 
                                 Message = model.Message
                             };
             var confirmation = new ContactUsConfirmationEmail(siteEmailAddress, model.EmailAddress)
                             {
-                                Name = model.Name,
-                                EmailAddress = model.EmailAddress,
-                                PhoneNumber = model.TelephoneNumber,
+                                Name = model.Name, 
+                                EmailAddress = model.EmailAddress, 
+                                PhoneNumber = model.TelephoneNumber, 
                                 Message = model.Message
                             };
-
-            var messageTask = message.SendAsync();
-            var confirmationTask = confirmation.SendAsync();
-
-            Task.WaitAll(messageTask, confirmationTask);
+            
+            await message.SendAsync();
+            await confirmation.SendAsync();
 
             return this.View("ThankYou");
         }
 
+        /// <summary>
+        /// The get email address from type.
+        /// </summary>
+        /// <param name="messageType">
+        /// The message type.
+        /// </param>
+        /// <returns>
+        /// The <see cref="string"/>.
+        /// </returns>
         private string GetEmailAddressFromType(MessageType messageType)
         {
             string emailAddress;
@@ -119,7 +130,7 @@ namespace CliftonAgility.Controllers
 
                 default:
 
-                    emailAddress = EmailAddresses.Info;
+                    emailAddress = EmailAddresses.Information;
 
                     break;
             }

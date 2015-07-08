@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Email
+namespace DoggySites.Email
 {
     /// <summary>
     /// The EmailAccount interface.

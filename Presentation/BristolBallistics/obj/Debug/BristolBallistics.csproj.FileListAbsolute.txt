@@ -53,3 +53,10 @@ C:\GitHub\DoggySites\Presentation\BristolBallistics\bin\Microsoft.Owin.Security.
 C:\GitHub\DoggySites\Presentation\BristolBallistics\obj\Debug\BristolBallistics.csprojResolveAssemblyReference.cache
 C:\GitHub\DoggySites\Presentation\BristolBallistics\obj\Debug\BristolBallistics.dll
 C:\GitHub\DoggySites\Presentation\BristolBallistics\obj\Debug\BristolBallistics.pdb
+C:\GitHub\DoggySites\Presentation\BristolBallistics\bin\Elmah.dll
+C:\GitHub\DoggySites\Presentation\BristolBallistics\bin\Elmah.Mvc.dll
+C:\GitHub\DoggySites\Presentation\BristolBallistics\bin\Postal.dll
+C:\GitHub\DoggySites\Presentation\BristolBallistics\bin\RazorEngine.dll
+C:\GitHub\DoggySites\Presentation\BristolBallistics\bin\Postal.xml
+C:\GitHub\DoggySites\Presentation\BristolBallistics\bin\RazorEngine.pdb
+C:\GitHub\DoggySites\Presentation\BristolBallistics\bin\RazorEngine.xml

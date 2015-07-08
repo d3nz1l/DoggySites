@@ -24,3 +24,5 @@ C:\GitHub\DoggySites\Presentation\Common\bin\Debug\Microsoft.Web.Infrastructure.
 C:\GitHub\DoggySites\Presentation\Common\obj\Debug\DoggySites.Presentation.Common.dll
 C:\GitHub\DoggySites\Presentation\Common\obj\Debug\DoggySites.Presentation.Common.pdb
 C:\GitHub\DoggySites\Presentation\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\GitHub\DoggySites\Presentation\Common\bin\Debug\System.Web.Mvc.dll
+C:\GitHub\DoggySites\Presentation\Common\bin\Debug\System.Web.Mvc.xml

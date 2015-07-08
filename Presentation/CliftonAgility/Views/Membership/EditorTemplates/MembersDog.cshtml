@@ -1,0 +1,70 @@
+﻿@model CliftonAgility.Models.Membership.MembersDog
+
+<div class="clone">
+    <h5>Add your dog</h5>
+    <div class="form-group">
+        <label class="col-sm-3 control-label">@Html.LabelFor(m => m.PetName)</label>
+        <div class="col-sm-9">
+            <div class="input-group">
+                @Html.TextBoxFor(m => m.PetName, new Dictionary<string, object> { { "class", "form-control" }, { "placeholder", "Your pets name..." }, { "data-header-field", "pet-name" } })
+                <span class="input-group-addon"><b class="glyphicon glyphicon-asterisk"></b></span>
+            </div>
+            <div class="error-message">
+                @Html.ValidationMessageFor(m => m.PetName)
+            </div>
+        </div>
+    </div><div class="form-group">
+        <label class="col-sm-3 control-label">@Html.LabelFor(m => m.Breed)</label>
+        <div class="col-sm-9">
+            <div class="input-group">
+                @Html.EnumDropDownListFor(m => m.Breed, "Select breed...", new Dictionary<string, object> { { "class", "form-control" }, { "placeholder", "What's their breed..." }, { "data-header-field", "pet-breed" } })
+                <span class="input-group-addon"><b class="glyphicon glyphicon-asterisk"></b></span>
+            </div>
+            <div class="error-message">
+                @Html.ValidationMessageFor(m => m.Breed)
+            </div>
+        </div>
+    </div><div class="form-group">
+        <label class="col-sm-3 control-label">@Html.LabelFor(m => m.DateOfBirth)</label>
+        <div class="col-sm-9">
+            <div class="input-group">
+                @Html.TextBoxFor(m => m.DateOfBirth, new Dictionary<string, object> { { "class", "form-control" }, { "placeholder", "Date of birth..." }, { "data-header-field", "pet-dob" }, { "data-provide", "datepicker" }, { "data-date-format", "dd MM yyyy" }, { "data-auto-close", "true" } })
+                <span class="input-group-addon"><b class="glyphicon glyphicon-asterisk"></b></span>
+            </div>
+            <div class="error-message">
+                @Html.ValidationMessageFor(m => m.DateOfBirth)
+            </div>
+        </div>
+    </div><div class="form-group">
+        <label class="col-sm-3 control-label">@Html.LabelFor(m => m.Gender)</label>
+        <div class="col-sm-9">
+            <div class="input-group">
+                @Html.EnumDropDownListFor(m => m.Gender, "Select gender...", new Dictionary<string, object> { { "class", "form-control" }, { "placeholder", "Your dogs breed..." }, { "data-header-field", "pet-gender" } })
+                <span class="input-group-addon"><b class="glyphicon glyphicon-asterisk"></b></span>
+            </div>
+            <div class="error-message">
+                @Html.ValidationMessageFor(m => m.Gender)
+            </div>
+        </div>
+    </div><div class="form-group">
+        <label class="col-sm-3 control-label">@Html.LabelFor(m => m.KennelClubName)</label>
+        <div class="col-sm-9">
+            @Html.TextBoxFor(m => m.KennelClubName, new Dictionary<string, object> { { "class", "form-control" }, { "placeholder", "Registered KC name (Optional)" }, { "data-header-field", "pet-kcname" } })
+            <div class="error-message">
+                @Html.ValidationMessageFor(m => m.KennelClubName)
+            </div>
+        </div>
+    </div><div class="form-group">
+        <label class="col-sm-3 control-label">@Html.LabelFor(m => m.KennelClubNumber)</label>
+        <div class="col-sm-9">
+            @Html.TextBoxFor(m => m.KennelClubNumber, new Dictionary<string, object> { { "class", "form-control" }, { "placeholder", "KC Registration number (Optional)" }, { "data-header-field", "pet-kcnumber" } })
+            <div class="error-message">
+                @Html.ValidationMessageFor(m => m.KennelClubNumber)
+            </div>
+        </div>
+    </div>
+    <div class="clone-actions row">
+        <a href="#" class="btn btn-sm btn-success pull-right clone-submit">Add Another</a>
+        <a href="#" class="btn btn-sm btn-default pull-right clone-cancel">Cancel</a>
+    </div>
+</div>

@@ -6,9 +6,9 @@
 //   The email account.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
-namespace Email
+namespace DoggySites.Email
 {
-    using System.Configuration;
+    using global::Email;
 
     /// <summary>
     /// The email account.

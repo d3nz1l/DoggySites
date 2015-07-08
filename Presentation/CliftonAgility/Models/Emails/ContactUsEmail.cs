@@ -11,6 +11,8 @@ namespace CliftonAgility.Models.Emails
 {
     using System.Globalization;
 
+    using CliftonAgility.Helpers;
+
     /// <summary>
     /// The contact us email.
     /// </summary>
@@ -27,7 +29,7 @@ namespace CliftonAgility.Models.Emails
         /// </param>
         public ContactUsEmail(string fromAddress, string toAddress)
         {
-            this.From = string.Format(CultureInfo.CurrentCulture, "Clifton Agility Club <{0}>", EmailAddresses.Club);
+            this.From = EmailAddresses.Club;
             this.Subject = "A message from CliftonAgility.co.uk";
             this.ReplyTo = fromAddress;
             this.To = toAddress;

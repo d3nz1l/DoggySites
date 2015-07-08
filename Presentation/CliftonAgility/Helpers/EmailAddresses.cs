@@ -34,5 +34,16 @@ namespace CliftonAgility.Helpers
                 return "membership@cliftonagility.co.uk";
             }
         }
+
+        /// <summary>
+        /// Gets the membership.
+        /// </summary>
+        public static string Club
+        {
+            get
+            {
+                return "club@cliftonagility.co.uk";
+            }
+        }
     }
 }
