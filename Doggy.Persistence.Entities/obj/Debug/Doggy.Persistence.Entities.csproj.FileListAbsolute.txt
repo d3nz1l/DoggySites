@@ -1,5 +1,12 @@
 C:\GitHub\DoggySites\Doggy.Persistence.Entities\bin\Debug\Doggy.Persistence.Entities.dll
 C:\GitHub\DoggySites\Doggy.Persistence.Entities\bin\Debug\Doggy.Persistence.Entities.pdb
-C:\GitHub\DoggySites\Doggy.Persistence.Entities\obj\Debug\Doggy.Persistence.Entities.csprojResolveAssemblyReference.cache
 C:\GitHub\DoggySites\Doggy.Persistence.Entities\obj\Debug\Doggy.Persistence.Entities.dll
 C:\GitHub\DoggySites\Doggy.Persistence.Entities\obj\Debug\Doggy.Persistence.Entities.pdb
+C:\GitHub\DoggySites\Doggy.Persistence.Entities\obj\Debug\Doggy.Persistence.Entities.csprojResolveAssemblyReference.cache
+C:\GitHub\DoggySites\Doggy.Persistence.Entities\bin\Debug\GenericRepository.dll
+C:\GitHub\DoggySites\Doggy.Persistence.Entities\bin\Debug\EntityFramework.dll
+C:\GitHub\DoggySites\Doggy.Persistence.Entities\bin\Debug\HtmlAgilityPack.dll
+C:\GitHub\DoggySites\Doggy.Persistence.Entities\bin\Debug\GenericRepository.pdb
+C:\GitHub\DoggySites\Doggy.Persistence.Entities\bin\Debug\EntityFramework.xml
+C:\GitHub\DoggySites\Doggy.Persistence.Entities\bin\Debug\HtmlAgilityPack.pdb
+C:\GitHub\DoggySites\Doggy.Persistence.Entities\bin\Debug\HtmlAgilityPack.xml

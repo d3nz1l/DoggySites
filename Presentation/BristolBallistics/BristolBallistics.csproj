@@ -48,15 +48,16 @@
     <Reference Include="Elmah">
       <HintPath>..\..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
     </Reference>
-    <Reference Include="Elmah.Mvc">
-      <HintPath>..\..\packages\Elmah.Mvc.2.1.2\lib\net40\Elmah.Mvc.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core">
@@ -106,6 +107,27 @@
     </Reference>
     <Reference Include="Microsoft.Owin.Security.Twitter">
       <HintPath>..\..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.5.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.3.5.1405-prerelease\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=3.5.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Unity.3.5.1405-prerelease\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Mvc, Version=3.5.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.Mvc.3.5.1405-prerelease\lib\net45\Microsoft.Practices.Unity.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=3.5.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.3.5.1405-prerelease\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
@@ -171,6 +193,10 @@
     <Reference Include="System.Web.Optimization">
       <HintPath>..\..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WebGrease">
       <HintPath>..\..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
       <Private>True</Private>
@@ -187,6 +213,8 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\UnityConfig.cs" />
+    <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -196,15 +224,27 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ViewModels\Home\SeedTime.cs" />
+    <Compile Include="Models\ViewModels\Home\TeamTimes.cs" />
+    <Compile Include="Models\ViewModels\Home\YearTimes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Readme\Elmah.txt" />
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap-datepicker3.css" />
+    <Content Include="Content\bootstrap-datepicker3.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\BootstrapSource\variables.css">
+      <DependentUpon>variables.less</DependentUpon>
+    </Content>
+    <Content Include="Content\BootstrapSource\variables.min.css">
+      <DependentUpon>variables.css</DependentUpon>
+    </Content>
+    <Content Include="Content\images\bblogobluepng.png" />
+    <Content Include="Content\images\ClubMembers.jpg" />
+    <Content Include="Content\Site.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -213,10 +253,87 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\BootstrapSource\.csscomb.json" />
+    <Content Include="Content\BootstrapSource\.csslintrc" />
+    <Content Include="Content\BootstrapSource\alerts.less" />
+    <Content Include="Content\BootstrapSource\badges.less" />
+    <Content Include="Content\BootstrapSource\bootswatch.less" />
+    <Content Include="Content\BootstrapSource\breadcrumbs.less" />
+    <Content Include="Content\BootstrapSource\button-groups.less" />
+    <Content Include="Content\BootstrapSource\buttons.less" />
+    <Content Include="Content\BootstrapSource\carousel.less" />
+    <Content Include="Content\BootstrapSource\close.less" />
+    <Content Include="Content\BootstrapSource\code.less" />
+    <Content Include="Content\BootstrapSource\component-animations.less" />
+    <Content Include="Content\BootstrapSource\dropdowns.less" />
+    <Content Include="Content\BootstrapSource\forms.less" />
+    <Content Include="Content\BootstrapSource\glyphicons.less" />
+    <Content Include="Content\BootstrapSource\grid.less" />
+    <Content Include="Content\BootstrapSource\input-groups.less" />
+    <Content Include="Content\BootstrapSource\jumbotron.less" />
+    <Content Include="Content\BootstrapSource\labels.less" />
+    <Content Include="Content\BootstrapSource\list-group.less" />
+    <Content Include="Content\BootstrapSource\media.less" />
+    <Content Include="Content\BootstrapSource\MixIns\alerts.less" />
+    <Content Include="Content\BootstrapSource\MixIns\background-variant.less" />
+    <Content Include="Content\BootstrapSource\MixIns\border-radius.less" />
+    <Content Include="Content\BootstrapSource\MixIns\buttons.less" />
+    <Content Include="Content\BootstrapSource\MixIns\center-block.less" />
+    <Content Include="Content\BootstrapSource\MixIns\clearfix.less" />
+    <Content Include="Content\BootstrapSource\MixIns\forms.less" />
+    <Content Include="Content\BootstrapSource\MixIns\gradients.less" />
+    <Content Include="Content\BootstrapSource\MixIns\grid-framework.less" />
+    <Content Include="Content\BootstrapSource\MixIns\grid.less" />
+    <Content Include="Content\BootstrapSource\MixIns\hide-text.less" />
+    <Content Include="Content\BootstrapSource\MixIns\image.less" />
+    <Content Include="Content\BootstrapSource\MixIns\labels.less" />
+    <Content Include="Content\BootstrapSource\MixIns\list-group.less" />
+    <Content Include="Content\BootstrapSource\MixIns\nav-divider.less" />
+    <Content Include="Content\BootstrapSource\MixIns\nav-vertical-align.less" />
+    <Content Include="Content\BootstrapSource\MixIns\opacity.less" />
+    <Content Include="Content\BootstrapSource\MixIns\pagination.less" />
+    <Content Include="Content\BootstrapSource\MixIns\panels.less" />
+    <Content Include="Content\BootstrapSource\MixIns\progress-bar.less" />
+    <Content Include="Content\BootstrapSource\MixIns\reset-filter.less" />
+    <Content Include="Content\BootstrapSource\MixIns\resize.less" />
+    <Content Include="Content\BootstrapSource\MixIns\responsive-visibility.less" />
+    <Content Include="Content\BootstrapSource\MixIns\size.less" />
+    <Content Include="Content\BootstrapSource\MixIns\tab-focus.less" />
+    <Content Include="Content\BootstrapSource\MixIns\table-row.less" />
+    <Content Include="Content\BootstrapSource\MixIns\text-emphasis.less" />
+    <Content Include="Content\BootstrapSource\MixIns\text-overflow.less" />
+    <Content Include="Content\BootstrapSource\MixIns\vendor-prefixes.less" />
+    <Content Include="Content\BootstrapSource\mixins.less" />
+    <Content Include="Content\BootstrapSource\modals.less" />
+    <Content Include="Content\BootstrapSource\navbar.less" />
+    <Content Include="Content\BootstrapSource\navs.less" />
+    <Content Include="Content\BootstrapSource\normalize.less" />
+    <Content Include="Content\BootstrapSource\pager.less" />
+    <Content Include="Content\BootstrapSource\pagination.less" />
+    <Content Include="Content\BootstrapSource\panels.less" />
+    <Content Include="Content\BootstrapSource\popovers.less" />
+    <Content Include="Content\BootstrapSource\print.less" />
+    <Content Include="Content\BootstrapSource\progress-bars.less" />
+    <Content Include="Content\BootstrapSource\responsive-embed.less" />
+    <Content Include="Content\BootstrapSource\responsive-utilities.less" />
+    <Content Include="Content\BootstrapSource\scaffolding.less" />
+    <Content Include="Content\BootstrapSource\tables.less" />
+    <Content Include="Content\BootstrapSource\theme.less" />
+    <Content Include="Content\BootstrapSource\thumbnails.less" />
+    <Content Include="Content\BootstrapSource\tooltip.less" />
+    <Content Include="Content\BootstrapSource\type.less" />
+    <Content Include="Content\BootstrapSource\utilities.less" />
+    <Content Include="Content\BootstrapSource\Validation.less" />
+    <Content Include="Content\BootstrapSource\variables.less" />
+    <Content Include="Content\BootstrapSource\wells.less" />
+    <Content Include="Content\bootstrap.less" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\BootstrapSource\variables.css.map">
+      <DependentUpon>variables.css</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Icon.png" />
+    <None Include="Scripts\BMJS\Microsoft.Maps-vsdoc.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
@@ -234,6 +351,10 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Shared\TopMenu.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -270,12 +391,27 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Emails\Web.config" />
     <Content Include="Views\Emails\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_TopNavigation.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Shared\_LayoutWithHeader.cshtml" />
+    <Content Include="Views\Home\_AboutTheClub.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\images\LogoSource\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ServiceLayer\ServiceLayer.csproj">
+      <Project>{44c7ddde-43f9-4216-9cf8-1f2ded2a89f3}</Project>
+      <Name>ServiceLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{8d91cf10-d912-4da6-9354-4ed04bafec0d}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,15 @@
+﻿@model CliftonAgility.Models.AdviceItems
+
+@{
+    ViewBag.Title = "Help & Advice";
+}
+
+@Html.Partial("_PageHeader", "Help & Advice")
+
+<p>
+    Here you'll find a list of common questions we get by new members. If you have any other questions please ask any member of the committee, they are always happy to help. We are all here to have fun.
+</p>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    @Html.DisplayForModel()
+</div>

@@ -1,0 +1,28 @@
+﻿@using System.Globalization
+@using CliftonAgility.Helpers
+@model CliftonAgility.Models.Emails.MembershipRequest
+Content-Type: text/plain; charset=utf-8
+
+Hi,
+
+We have received a membership request from the website.
+
+A copy of the request is below.
+
+Name: @string.Format(CultureInfo.CurrentCulture, "{0} {1}", Model.Forename, Model.Surname)
+Email: @Model.EmailAddress
+Phone: @Model.PhoneNumber
+Experience: @Html.DisplayForEnum(m => m.Experience)
+Address: @Model.Address
+
+Their Dogs:
+@foreach (var dog in Model.MembersDogs)
+{
+    var dogLine = string.Format(CultureInfo.CurrentCulture, "{0} - {1}({2}) - {3} - {4} - {5} {6}", dog.PetName, dog.KennelClubName, dog.KennelClubNumber, dog.Breed.ToDisplayString(), dog.DateOfBirth, dog.Gender, Environment.NewLine);
+    @dogLine
+    
+}
+
+Thank you,
+
+Clifton Agility Club

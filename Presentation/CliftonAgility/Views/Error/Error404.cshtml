@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Page Not Found";
+    Layout = "~/Views/Shared/_LayoutError.cshtml";
+}
+<div class="row">
+    <div class="col-sm-6">
+        @Html.Partial("_PageHeader", "Page Not Found")
+        <p>
+            Sorry but the page you doesn't exists. Please check the following:
+        </p>
+        <ul>
+            <li>The address wasn't mis-typed.</li>
+            <li>If you have our site as a bookmark/favourite, please use the use the button below to go to our new homepage and update your bookmark/favourite</li>
+            <li>If you've come from another website, please use the use the button below to go to our new homepage.</li>
+        </ul>
+        <a href="/" class="btn btn-lg btn-success">Goto our Homepage<span class="glyphicon glyphicon-ok-circle"></span></a>
+
+    </div>
+    <div class="col-sm-6">
+        <img alt="" class="img-responsive" src="@Url.Content("~/Content/images/dog-hiding.jpg")"/>
+    </div>
+</div>

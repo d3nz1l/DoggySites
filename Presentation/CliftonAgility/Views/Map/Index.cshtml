@@ -1,0 +1,43 @@
+﻿@model CliftonAgility.Models.Location
+@{
+    ViewBag.Title = Model.Name;
+    Layout = "~/Views/Shared/_LayoutFullWidth.cshtml";
+}
+
+<style>
+.OverlaysTL {
+    left: 0 !important;
+    top: 60px !important;
+}
+</style>
+
+<div class="map-panel">
+    <h3>@Model.Name</h3>
+    <b>
+        @Html.DisplayFor(m => m.Address)
+    </b>
+    <a target="_blank" class="btn btn-success btn-sm" href="@Url.GoogleMapLink(Model.Longitude, Model.Latitude, 13)">Open in Google Maps <span class="glyphicon glyphicon-globe"></span></a>
+</div>
+<div id="map"
+     data-map-type="aerial"
+     data-latitude="@Model.Latitude"
+     data-longitude="@Model.Longitude"
+     data-zoom="12"
+     data-pushpin-icon="@Url.Content("~/content/images/logopushpin.png")"></div>
+
+
+@section headScripts
+{
+    <script charset="UTF-8" type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&mkt=en-gb"></script>
+}
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/maps")
+
+    <script type="text/javascript">
+        window.onload = function () {
+            window.BingMap = new BingMap($('#map'));
+        }
+    </script>
+}

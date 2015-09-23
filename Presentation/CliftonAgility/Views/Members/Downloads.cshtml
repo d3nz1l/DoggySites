@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Downloads";
+    ViewBag.HeaderText = "Looking for a club document, you should find it here.";
+}
+
+@Html.Partial("_PageHeader", "Downloads")
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Club Rules</h3>
+            <p>
+                The current club rules booklet.
+            </p>
+            <a class="btn btn-default btn-block btn-sm" href="@Url.Content("~/content/downloads/CLIFTON_AGILITY_CLUB___RULES.pdf")" target="_blank">
+                Download (PDF)
+                <i class="glyphicon glyphicon-download-alt"></i>
+            </a>
+            <a class="btn btn-default btn-block btn-sm" href="@Url.Content("~/content/downloads/CLIFTON_AGILITY_CLUB___RULES.docx")" target="_blank">
+                Download (Word)
+                <i class="glyphicon glyphicon-download-alt"></i>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <h3>2015 Result Sheet</h3>
+            <p>
+                Fill this with all your results and return it to Pauline to be in with a chance of Awards at the AGM.
+            </p>
+            <a class="btn btn-default btn-block btn-sm" href="@Url.Content("~/content/downloads/results_sheet.docx")" target="_blank">
+                Download (Word)
+                <i class="glyphicon glyphicon-download-alt"></i>
+            </a>
+        </div>
+    </div>
+

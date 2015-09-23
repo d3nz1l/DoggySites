@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Enumerations\DogBreeds.cs" />
     <Compile Include="Enumerations\DogGender.cs" />
+    <Compile Include="HtmlHelpers\GoogleMapsHelpers.cs" />
     <Compile Include="HtmlHelpers\MenuHelper.cs" />
     <Compile Include="Menu\MenuBuilder.cs" />
     <Compile Include="Menu\MenuItem.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="Menu\Menu.xsd">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

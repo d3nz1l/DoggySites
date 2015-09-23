@@ -13,7 +13,7 @@ function Clone(cloneContainer, clonable) {
         var cancelButton = actions.find('.clone-cancel'),
         submitButton = actions.find('.clone-submit');
 
-        this.addRemoveButton(cancelButton);
+        this.addCancelButton(cancelButton);
         this.master.addSubmitButton(submitButton);
     }
 }
@@ -31,15 +31,17 @@ Clone.prototype.addCancelButton = function (cancelButton) {
 
     cancelButton.click({ clone: this }, function (e) {
 
+        e.preventDefault();
         var clone = e.data.clone;
 
         if (clone.hasHeader()) {
             clone.fold();
         } else {
-            clone.master.removeClone(clone);
             clone.fold();
-            clone.remove();
+            clone.master.removeClone(clone);
         }
+
+        clone.master.showActions();
     });
 }
 
@@ -47,12 +49,12 @@ Clone.prototype.addRemoveButton = function(removeButton) {
 
     removeButton.click({ clone: this }, function(e) {
 
+        e.preventDefault();
         var clone = e.data.clone;
 
-        clone.master.removeClone(clone);
         clone.master.removeHeader(clone.header);
         clone.fold();
-        clone.remove();
+        clone.master.removeClone(clone);
     });
 }
 
@@ -62,6 +64,7 @@ Clone.prototype.addEditButton = function (editButton) {
 
     editButton.click({ clone: this }, function (e) {
 
+        e.preventDefault();
         var clone = e.data.clone;
 
         clone.master.foldAll();
@@ -122,8 +125,6 @@ Clone.prototype.createHeader = function() {
             return;
         }
 
-        
-
         if ($(element).prop('tagName') === "SELECT") {
             var val = $(element).find(':selected').text();
         } else {
@@ -139,6 +140,8 @@ Clone.prototype.createHeader = function() {
 
     this.addRemoveButton(self.header.find('.clone-remove'));
     this.addEditButton(self.header.find('.clone-edit'));
+
+    self.header.find('[data-toggle="tooltip"]').tooltip();
 
     return this.header;
 }

@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Something has gone wrong";
+    Layout = "~/Views/Shared/_LayoutError.cshtml";
+}
+
+<div class="row">
+    <div class="col-sm-6">
+        @Html.Partial("_PageHeader", "Something has gone wrong")
+        <p>
+            Sorry but we appear to be broken. If you keep seeing this please let us know what you were trying to do, so we can fix it.
+        </p>
+        <a href="/" class="btn btn-lg btn-success">Goto our Homepage<span class="glyphicon glyphicon-ok-circle"></span></a>
+    </div>
+    <div class="col-sm-6">
+        <img alt="" class="img-responsive" src="@Url.Content("~/Content/images/dog-hiding.jpg")" />
+    </div>
+</div>
+

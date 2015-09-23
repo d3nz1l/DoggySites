@@ -15,7 +15,7 @@
     <AssemblyName>CliftonAgility</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -43,7 +43,7 @@
   <ItemGroup>
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <HintPath>..\..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Elmah">
       <HintPath>..\..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
@@ -53,64 +53,64 @@
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin.Security.Facebook, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin.Security.Google, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin.Security.MicrosoftAccount, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin.Security.Twitter, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Postal">
       <HintPath>..\..\packages\Postal.Mvc5.1.2.0\lib\net45\Postal.dll</HintPath>
@@ -129,27 +129,27 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>True</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
       <SpecificVersion>True</SpecificVersion>
     </Reference>
     <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>True</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>True</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>True</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>True</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
@@ -162,23 +162,23 @@
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
     </Reference>
     <Reference Include="System.Net.Http.WebRequest">
     </Reference>
     <Reference Include="System.Web.Optimization">
-      <HintPath>..\..\..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <HintPath>..\..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Owin">
-      <HintPath>..\..\..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <HintPath>..\..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -189,23 +189,38 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\EmailPreviewController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MapController.cs" />
+    <Compile Include="Controllers\MembersController.cs" />
     <Compile Include="Controllers\MembershipController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\EmailAddresses.cs" />
+    <Compile Include="Helpers\EnumHelpers.cs" />
+    <Compile Include="Helpers\StringHelpers.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AdviceItem.cs" />
+    <Compile Include="Models\AdviceItems.cs" />
+    <Compile Include="Models\ClothingItem.cs" />
+    <Compile Include="Models\ClothingItems.cs" />
     <Compile Include="Models\Contact\MessageForm.cs" />
     <Compile Include="Models\Contact\MessageType.cs" />
     <Compile Include="Models\Emails\BaseEmail.cs" />
     <Compile Include="Models\Emails\ContactUsConfirmationEmail.cs" />
     <Compile Include="Models\Emails\ContactUsEmail.cs" />
+    <Compile Include="Models\Emails\MembershipRequest.cs" />
+    <Compile Include="Models\Emails\MembershipUser.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Location.cs" />
+    <Compile Include="Models\LocationFactory.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Membership\ExperienceLevel.cs" />
     <Compile Include="Models\Membership\MembersDog.cs" />
     <Compile Include="Models\Membership\EnquiryForm.cs" />
+    <Compile Include="Models\PostalAddress.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -215,20 +230,25 @@
     <Content Include="Content\bootstrap-datepicker3.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\BootstrapSource\bootstrap.css" />
-    <Content Include="Content\BootstrapSource\media.css" />
-    <Content Include="Content\BootstrapSource\mixins.css" />
-    <Content Include="Content\BootstrapSource\normalize.css" />
-    <Content Include="Content\BootstrapSource\print.css" />
-    <Content Include="Content\BootstrapSource\responsive-embed.css" />
-    <Content Include="Content\BootstrapSource\theme.css" />
-    <Content Include="Content\BootstrapSource\variables.css" />
+    <Content Include="Content\BootstrapSource\variables.css">
+      <DependentUpon>variables.less</DependentUpon>
+    </Content>
+    <Content Include="Content\BootstrapSource\variables.min.css">
+      <DependentUpon>variables.css</DependentUpon>
+    </Content>
     <Content Include="Content\images\agility-tunnel.png" />
+    <Content Include="Content\images\ceili-jump.jpg" />
+    <Content Include="Content\images\chelvey.JPG" />
     <Content Include="Content\images\ClubLogo.png" />
     <Content Include="Content\images\ClubLogo60.png" />
     <Content Include="Content\images\ClubLogo90.png" />
     <Content Include="Content\images\committee.jpg" />
+    <Content Include="Content\images\dog-and-pony-still-hiding.jpg" />
+    <Content Include="Content\images\dog-hiding.jpg" />
+    <Content Include="Content\images\facebook24.jpg" />
+    <Content Include="Content\images\LogoPushpin.png" />
     <Content Include="Content\images\loki-jumping.jpg" />
+    <Content Include="Content\Site.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -239,11 +259,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap.less" />
+    <Content Include="Content\downloads\CLIFTON_AGILITY_CLUB___RULES.docx" />
+    <Content Include="Content\downloads\CLIFTON_AGILITY_CLUB___RULES.pdf" />
+    <Content Include="Content\downloads\results_sheet.docx" />
     <Content Include="Content\BootstrapSource\.csscomb.json" />
     <Content Include="Content\BootstrapSource\.csslintrc" />
     <Content Include="Content\BootstrapSource\alerts.less" />
     <Content Include="Content\BootstrapSource\badges.less" />
-    <Content Include="Content\BootstrapSource\bootstrap.css.map" />
     <Content Include="Content\BootstrapSource\bootswatch.less" />
     <Content Include="Content\BootstrapSource\breadcrumbs.less" />
     <Content Include="Content\BootstrapSource\button-groups.less" />
@@ -261,28 +283,6 @@
     <Content Include="Content\BootstrapSource\labels.less" />
     <Content Include="Content\BootstrapSource\list-group.less" />
     <Content Include="Content\BootstrapSource\media.less" />
-    <Content Include="Content\BootstrapSource\mixins.less" />
-    <Content Include="Content\BootstrapSource\modals.less" />
-    <Content Include="Content\BootstrapSource\navbar.less" />
-    <Content Include="Content\BootstrapSource\navs.less" />
-    <Content Include="Content\BootstrapSource\normalize.less" />
-    <Content Include="Content\BootstrapSource\pager.less" />
-    <Content Include="Content\BootstrapSource\pagination.less" />
-    <Content Include="Content\BootstrapSource\panels.less" />
-    <Content Include="Content\BootstrapSource\popovers.less" />
-    <Content Include="Content\BootstrapSource\print.less" />
-    <Content Include="Content\BootstrapSource\progress-bars.less" />
-    <Content Include="Content\BootstrapSource\responsive-embed.less" />
-    <Content Include="Content\BootstrapSource\responsive-utilities.less" />
-    <Content Include="Content\BootstrapSource\scaffolding.less" />
-    <Content Include="Content\BootstrapSource\tables.less" />
-    <Content Include="Content\BootstrapSource\theme.less" />
-    <Content Include="Content\BootstrapSource\thumbnails.less" />
-    <Content Include="Content\BootstrapSource\tooltip.less" />
-    <Content Include="Content\BootstrapSource\type.less" />
-    <Content Include="Content\BootstrapSource\utilities.less" />
-    <Content Include="Content\BootstrapSource\variables.less" />
-    <Content Include="Content\BootstrapSource\wells.less" />
     <Content Include="Content\BootstrapSource\MixIns\alerts.less" />
     <Content Include="Content\BootstrapSource\MixIns\background-variant.less" />
     <Content Include="Content\BootstrapSource\MixIns\border-radius.less" />
@@ -312,9 +312,36 @@
     <Content Include="Content\BootstrapSource\MixIns\text-emphasis.less" />
     <Content Include="Content\BootstrapSource\MixIns\text-overflow.less" />
     <Content Include="Content\BootstrapSource\MixIns\vendor-prefixes.less" />
+    <Content Include="Content\BootstrapSource\mixins.less" />
+    <Content Include="Content\BootstrapSource\modals.less" />
+    <Content Include="Content\BootstrapSource\navbar.less" />
+    <Content Include="Content\BootstrapSource\navs.less" />
+    <Content Include="Content\BootstrapSource\normalize.less" />
+    <Content Include="Content\BootstrapSource\pager.less" />
+    <Content Include="Content\BootstrapSource\pagination.less" />
+    <Content Include="Content\BootstrapSource\panels.less" />
+    <Content Include="Content\BootstrapSource\popovers.less" />
+    <Content Include="Content\BootstrapSource\print.less" />
+    <Content Include="Content\BootstrapSource\progress-bars.less" />
+    <Content Include="Content\BootstrapSource\responsive-embed.less" />
+    <Content Include="Content\BootstrapSource\responsive-utilities.less" />
+    <Content Include="Content\BootstrapSource\scaffolding.less" />
+    <Content Include="Content\BootstrapSource\tables.less" />
+    <Content Include="Content\BootstrapSource\theme.less" />
+    <Content Include="Content\BootstrapSource\thumbnails.less" />
+    <Content Include="Content\BootstrapSource\tooltip.less" />
+    <Content Include="Content\BootstrapSource\type.less" />
+    <Content Include="Content\BootstrapSource\utilities.less" />
     <Content Include="Content\BootstrapSource\Validation.less" />
+    <Content Include="Content\BootstrapSource\variables.less" />
+    <Content Include="Content\BootstrapSource\wells.less" />
+    <Content Include="Content\BootstrapSource\variables.css.map">
+      <DependentUpon>variables.css</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\WebWiz - Clifton.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Icon.png" />
+    <None Include="Scripts\BMJS\Microsoft.Maps-vsdoc.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Components\bootstrap-datepicker.js" />
@@ -322,6 +349,7 @@
     <Content Include="Scripts\Components\remote.clone.js" />
     <Content Include="Scripts\Components\_hooks.js" />
     <Content Include="Scripts\custom-validation.js" />
+    <Content Include="Scripts\facebookSDK.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Scripts\jquery-2.1.4.min.map" />
@@ -332,12 +360,14 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\maps.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\npm.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\site.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Shared\TopMenu.xml">
       <SubType>Designer</SubType>
@@ -400,11 +430,40 @@
     <Content Include="Scripts\Components\remote.clonable.js" />
     <Content Include="Views\Membership\EditorTemplates\MembersDog.cshtml" />
     <Content Include="Views\Membership\_MembersDogHeader.cshtml" />
+    <Content Include="Views\Membership\Thankyou.cshtml" />
+    <Content Include="Views\Asides\_BecomeAMember.cshtml" />
+    <Content Include="Views\Asides\_EmailUs.cshtml" />
+    <Content Include="Views\Asides\_ContactUs.cshtml" />
+    <Content Include="Views\Asides\_OurVenue.cshtml" />
+    <Content Include="Views\Emails\MembershipUser.cshtml" />
+    <Content Include="Views\Emails\MembershipUser.Html.cshtml" />
+    <Content Include="Views\Emails\MembershipUser.Text.cshtml" />
+    <Content Include="Views\EmailPreview\Index.cshtml" />
+    <Content Include="Views\Emails\MembershipRequest.cshtml" />
+    <Content Include="Views\Emails\MembershipRequest.Html.cshtml" />
+    <Content Include="Views\Emails\MembershipRequest.Text.cshtml" />
+    <Content Include="Views\Home\OurVenue.cshtml" />
+    <Content Include="Views\Members\ClubClothing.cshtml" />
+    <Content Include="Views\Members\DisplayTemplates\ClothingItem.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Currency.cshtml" />
+    <Content Include="Views\Members\HelpAdvice.cshtml" />
+    <Content Include="Views\Members\DisplayTemplates\AdviceItem.cshtml" />
+    <Content Include="Views\Shared\_PageHeader.cshtml" />
+    <Content Include="Views\Map\Index.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\BlockAddress.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\StringEmptyCheck.cshtml" />
+    <Content Include="Views\Shared\_FacebookSDK.cshtml" />
+    <Content Include="Views\Shared\_LayoutError.cshtml" />
+    <Content Include="Views\Error\Error404.cshtml" />
+    <Content Include="Views\Error\Error500.cshtml" />
+    <Content Include="Views\Members\Downloads.cshtml" />
+    <Content Include="Views\Emails\ContactUsConfirmation.cshtml" />
+    <Content Include="Views\Emails\ContactUsConfirmation.Html.cshtml" />
+    <Content Include="Views\Emails\ContactUsConfirmation.Text.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\Contact\EditorTemplates\" />
-    <Folder Include="Views\EmailPreview\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -437,7 +496,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>62498</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:62498/</IISUrl>
+          <IISUrl>http://www.cliftonagility.co.uk</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

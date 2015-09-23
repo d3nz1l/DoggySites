@@ -40,8 +40,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseEntity.cs" />
+    <Compile Include="Bfa\Team.cs" />
+    <Compile Include="Bfa\TournamentResult.cs" />
     <Compile Include="Enumerations\DogBreed.cs" />
+    <Compile Include="Flyball\RaceSeedTime.cs" />
+    <Compile Include="Flyball\Team.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Doggy.Persistence.GenericRepository\GenericRepository\GenericRepository.csproj">
+      <Project>{52e4cb22-a9ac-48d6-8b47-cff4e2213690}</Project>
+      <Name>GenericRepository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

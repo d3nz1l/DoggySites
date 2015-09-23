@@ -32,7 +32,14 @@ RemoteClonable.prototype.SetupActions = function () {
         return this;
     }
 
-    this.addSubmitButton(this.actions.find('.clone-submit'));
+    var self = this;
+
+    this.actions.find('.clone-add').click(function (e) {
+
+        e.preventDefault();
+
+        self.addClone(true);
+    });
 
     return this;
 }
@@ -71,9 +78,9 @@ RemoteClonable.prototype.addSubmitButton = function(submitButton) {
 
         e.preventDefault();
 
-        //if (!self.cloneContainer.closest('form').valid()) {
-        //    return;
-        //}
+        if (!self.cloneContainer.closest('form').valid()) {
+            return;
+        }
 
         for (var i = 0 ; i < self.clones.length; i++) {
 
@@ -85,7 +92,7 @@ RemoteClonable.prototype.addSubmitButton = function(submitButton) {
             }
         }
 
-        self.addClone(true);
+        self.showActions();
     });
 }
 
@@ -149,12 +156,13 @@ RemoteClonable.prototype.addClone = function() {
 
 RemoteClonable.prototype.removeClone = function(clone) {
 
-	this.clones.splice(this.clones.indexOf(clone), 1);
+    this.clones.splice(this.clones.indexOf(clone), 1);
+    clone.container.remove();
 }
 
 RemoteClonable.prototype.removeHeader = function (header) {
 
-    header.hide("slide", { direction:"down" }, 400);
+    header.slideUp();
     header.remove();
 
     this.toggleHeaderTitle();
@@ -163,7 +171,7 @@ RemoteClonable.prototype.removeHeader = function (header) {
 RemoteClonable.prototype.addHeader = function (header) {
     header.hide();
     this.summary.append(header);
-    header.show("slide", { direction: "up" }, 400);
+    header.slideDown();
 
     this.toggleHeaderTitle();
 }
@@ -198,6 +206,8 @@ RemoteClonable.prototype.parseCurrentClones = function() {
         this.AppendClone(clone, false);
 
         this.addHeader(clone.createHeader());
+
+        clone.fold();
     }
 
     return this;

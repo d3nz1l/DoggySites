@@ -25,6 +25,8 @@ namespace CliftonAgility
         /// </param>
         public static void RegisterBundles(BundleCollection bundles)
         {
+            BundleTable.EnableOptimizations = true;
+
             bundles.FileSetOrderList.Clear();
 
             bundles.Add(new ScriptBundle("~/bundles/vendor").Include(
@@ -38,9 +40,11 @@ namespace CliftonAgility
                         "~/Scripts/Components/bootstrap-datepicker.js",
                         "~/Scripts/jquery.validate.js",
                         "~/Scripts/custom-validation.js",
-                        "~/Scripts/jquery.validate.unobtrusive.js"));
+                        "~/Scripts/jquery.validate.unobtrusive.js",
+                        "~/Scripts/site.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/site").Include());
+            bundles.Add(new ScriptBundle("~/bundles/maps").Include(
+                        "~/Scripts/maps.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.

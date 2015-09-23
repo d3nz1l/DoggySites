@@ -33,6 +33,17 @@ namespace CliftonAgility.Controllers
         }
 
         /// <summary>
+        /// The our venue.
+        /// </summary>
+        /// <returns>
+        /// The <see cref="ActionResult"/>.
+        /// </returns>
+        public ActionResult OurVenue()
+        {
+            return this.View();
+        }
+
+        /// <summary>
         /// The about.
         /// </summary>
         /// <returns>
@@ -100,9 +111,11 @@ namespace CliftonAgility.Controllers
                                 PhoneNumber = model.TelephoneNumber, 
                                 Message = model.Message
                             };
-            
-            await message.SendAsync();
-            await confirmation.SendAsync();
+
+            var messageTask = message.SendAsync();
+            var confirmationTask = confirmation.SendAsync();
+
+            await Task.WhenAll(messageTask, confirmationTask);
 
             return this.View("ThankYou");
         }

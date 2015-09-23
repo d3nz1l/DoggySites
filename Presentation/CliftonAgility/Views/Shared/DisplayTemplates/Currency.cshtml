@@ -1,0 +1,4 @@
+﻿@using System.Globalization
+@model decimal
+           
+<span>@Model.ToString("c", CultureInfo.CurrentUICulture)</span>

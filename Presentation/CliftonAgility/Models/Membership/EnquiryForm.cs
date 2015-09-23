@@ -63,5 +63,12 @@ namespace CliftonAgility.Models.Membership
         [Required(ErrorMessage = "Please gives us your dogs details.")]
         [Display(Name = "Your dogs details:")]
         public IEnumerable<MembersDog> MembersDogs { get; set; }
+
+        /// <summary>
+        /// Gets or sets the experience.
+        /// </summary>
+        [Required(ErrorMessage = "Please tells us how much experience you have. This will allow us to place you in the correct class.")]
+        [Display(Name = "How much experience have you had:")]
+        public ExperienceLevel Experience { get; set; }
     }
 }

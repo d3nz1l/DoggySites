@@ -1,0 +1,10 @@
+﻿@model string
+           
+@{
+    if (string.IsNullOrWhiteSpace(Model))
+    {
+        return;
+    }
+}
+
+<span>@Model</span>

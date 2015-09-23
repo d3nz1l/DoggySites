@@ -1,0 +1,15 @@
+﻿@model CliftonAgility.Models.ClothingItem
+
+<div class="col-md-4 col-sm-6">
+    <div class="panel panel-default clothing-panel">
+        <div class="panel-heading">
+            <h3 class="panel-title">@Model.Name</h3>
+        </div>
+        <div class="panel-body">
+            <p>
+                @Model.Description
+            </p>
+            <label>@Html.DisplayFor(m => Model.Price)</label>
+        </div>
+    </div>
+</div>

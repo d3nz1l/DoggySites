@@ -29,7 +29,7 @@ namespace CliftonAgility.Models.Emails
         /// </param>
         public ContactUsConfirmationEmail(string fromAddress, string toAddress)
         {
-            this.From = string.Format(CultureInfo.CurrentCulture, "Clifton Agility Club <{0}>", EmailAddresses.Club);
+            this.From = EmailAddresses.Club;
             this.Subject = "Thank you - Clifton Agility Club";
             this.ReplyTo = fromAddress;
             this.To = toAddress;

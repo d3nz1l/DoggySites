@@ -8,6 +8,8 @@
 // --------------------------------------------------------------------------------------------------------------------
 namespace CliftonAgility.Helpers
 {
+    using System.Runtime.Remoting.Messaging;
+
     /// <summary>
     /// The email addresses.
     /// </summary>

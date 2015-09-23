@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Our Venue";
+}
+
+<div class="row">
+    <div class="col-sm-5">
+        <h1>Where We Train</h1>
+        <p>
+            Our training venue is Chelvey Court Farm, near Backwell.
+        </p>
+        @*<div class="col-sm-6">
+            <img class="img-responsive" alt="" src="@Url.Content("~/Content/images/chelvey.jpg")" />
+        </div>*@
+        <div>
+            <h4>Address:</h4>
+            <address class="address-block">
+                <span>Chelvey Court Farm</span>
+                <span>Chelvey Road</span>
+                <span>Backwell</span>
+                <span>Bristol</span>
+                <span>BS48 4AA</span>
+            </address>
+        </div>
+        <h4>Training times:</h4>
+        <ul>
+            <li>Wednesday evenings - 19:00 to 22:00</li>
+        </ul>
+    </div>
+    <div class="col-sm-7">
+        <div id="map" class="map"
+             data-map-type="aerial"
+             data-latitude="51.4115062667691"
+             data-longitude="-2.76832604408264"
+             data-zoom="14"
+             data-pushpin-icon="@Url.Content("~/content/images/logopushpin.png")"></div>
+        @Html.ActionLink("View larger map", "Index", "Map", new RouteValueDictionary { { "locationId", "Chelvey" } }, new Dictionary<string, object>
+                                                                                              {
+                                                                                                  { "class", "btn-link" }
+                                                                                              })
+    </div>
+</div>
+
+@section headScripts
+{
+    <script charset="UTF-8" type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&mkt=en-gb"></script>
+}
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/maps")
+
+    <script type="text/javascript">
+        window.onload = function () {
+            window.BingMap = new BingMap($('#map'));
+        }
+    </script>
+}

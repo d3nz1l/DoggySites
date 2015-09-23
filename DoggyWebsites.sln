@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doggy.Persistence", "Doggy.Persistence\Doggy.Persistence.csproj", "{1F9E15FB-4737-4756-8402-60EACEEE2F67}"
 EndProject
@@ -27,6 +27,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Presentation\Common\Common.csproj", "{8D91CF10-D912-4DA6-9354-4ED04BAFEC0D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Email", "Domain\Email\Email.csproj", "{F7F91E2F-1926-49C1-974F-A2B4E3005667}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericRepository", "Doggy.Persistence.GenericRepository\GenericRepository\GenericRepository.csproj", "{52E4CB22-A9AC-48D6-8B47-CFF4E2213690}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{61E802C9-ABFD-4EDC-9CCF-417E79C74C8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLayer", "ServiceLayer\ServiceLayer.csproj", "{44C7DDDE-43F9-4216-9CF8-1F2DED2A89F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +64,18 @@ Global
 		{F7F91E2F-1926-49C1-974F-A2B4E3005667}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7F91E2F-1926-49C1-974F-A2B4E3005667}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7F91E2F-1926-49C1-974F-A2B4E3005667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52E4CB22-A9AC-48D6-8B47-CFF4E2213690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E4CB22-A9AC-48D6-8B47-CFF4E2213690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E4CB22-A9AC-48D6-8B47-CFF4E2213690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E4CB22-A9AC-48D6-8B47-CFF4E2213690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61E802C9-ABFD-4EDC-9CCF-417E79C74C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E802C9-ABFD-4EDC-9CCF-417E79C74C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E802C9-ABFD-4EDC-9CCF-417E79C74C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E802C9-ABFD-4EDC-9CCF-417E79C74C8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C7DDDE-43F9-4216-9CF8-1F2DED2A89F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C7DDDE-43F9-4216-9CF8-1F2DED2A89F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C7DDDE-43F9-4216-9CF8-1F2DED2A89F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C7DDDE-43F9-4216-9CF8-1F2DED2A89F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,5 +87,7 @@ Global
 		{C6021561-5E98-42A7-88D0-9CD3B852D680} = {81A8E339-E74A-4586-9FA6-FB00A41ECD58}
 		{8D91CF10-D912-4DA6-9354-4ED04BAFEC0D} = {81A8E339-E74A-4586-9FA6-FB00A41ECD58}
 		{F7F91E2F-1926-49C1-974F-A2B4E3005667} = {7700E7E8-EBCC-481C-A4FE-CC22DF60BD02}
+		{52E4CB22-A9AC-48D6-8B47-CFF4E2213690} = {75FB31CD-79EB-4608-8DFB-2C9EE0BD0D61}
+		{44C7DDDE-43F9-4216-9CF8-1F2DED2A89F3} = {7700E7E8-EBCC-481C-A4FE-CC22DF60BD02}
 	EndGlobalSection
 EndGlobal

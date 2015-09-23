@@ -1,7 +1,26 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "About Us";
+    ViewBag.HeaderText = "Information about the club and Flyball";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<h1>About Flyball and Bristol Ball-istics</h1>
+
+<div id="the-club" class="row menulink">
+    @Html.Partial("_AboutTheClub")
+</div>
+<div id="training" class="row menulink">
+    <div class="col-lg-12">
+        <h2>Training</h2>
+        <p>
+            We train in the Henbury and Shirehampton areas of Bristol, usually on a Sunday morning although this changes during the Summer when we are away competing. Our main intake of starter dogs is in October although we do sometimes have spaces come up at other times of the year. 
+        </p>
+        <p>
+            To begin training with us dogs must be over 12months old, have a good recall, be reasonably fit and be able to retrieve a tennis ball. All breeds and sizes of dog are welcome. If you are interested in joining us please get in touch through the 'contact' page and we can give you some more information. If your dog is currently under 12months please still contact us as we can put you on our waiting list and give you some foundation exercises to work on.
+        </p>
+    </div>
+</div>
+<div id="the-committee" class="row menulink">
+    @Html.Partial("_TheCommittee")
+</div>
+
+

@@ -1475,7 +1475,7 @@ hr {
   margin-top: 21px;
   margin-bottom: 21px;
   border: 0;
-  border-top: 1px solid #ecf0f1;
+  border-top: 1px solid #f3f3f3;
 }
 /* line 125, BootstrapSource\scaffolding.less */
 .sr-only {
@@ -1860,7 +1860,7 @@ blockquote {
   padding: 10.5px 21px;
   margin: 0 0 21px;
   font-size: 18.75px;
-  border-left: 5px solid #ecf0f1;
+  border-left: 5px solid #f3f3f3;
 }
 /* line 254, BootstrapSource\type.less */
 blockquote p:last-child,
@@ -1888,7 +1888,7 @@ blockquote .small:before {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #ecf0f1;
+  border-right: 5px solid #f3f3f3;
   border-left: 0;
   text-align: right;
 }
@@ -1957,7 +1957,7 @@ pre {
   word-break: break-all;
   word-wrap: break-word;
   color: #7b8a8b;
-  background-color: #ecf0f1;
+  background-color: #f3f3f3;
   border: 1px solid #cccccc;
   border-radius: 4px;
 }
@@ -2888,12 +2888,12 @@ th {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 1px solid #ecf0f1;
+  border-top: 1px solid #f3f3f3;
 }
 /* line 41, BootstrapSource\tables.less */
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #ecf0f1;
+  border-bottom: 2px solid #f3f3f3;
 }
 /* line 50, BootstrapSource\tables.less */
 .table > caption + thead > tr:first-child > th,
@@ -2906,7 +2906,7 @@ th {
 }
 /* line 57, BootstrapSource\tables.less */
 .table > tbody + tbody {
-  border-top: 2px solid #ecf0f1;
+  border-top: 2px solid #f3f3f3;
 }
 /* line 62, BootstrapSource\tables.less */
 .table .table {
@@ -2923,7 +2923,7 @@ th {
 }
 /* line 88, BootstrapSource\tables.less */
 .table-bordered {
-  border: 1px solid #ecf0f1;
+  border: 1px solid #f3f3f3;
 }
 /* line 94, BootstrapSource\tables.less */
 .table-bordered > thead > tr > th,
@@ -2932,7 +2932,7 @@ th {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #ecf0f1;
+  border: 1px solid #f3f3f3;
 }
 /* line 101, BootstrapSource\tables.less */
 .table-bordered > thead > tr > th,
@@ -2945,7 +2945,7 @@ th {
 }
 /* line 125, BootstrapSource\tables.less */
 .table-hover > tbody > tr:hover {
-  background-color: #ecf0f1;
+  background-color: #f3f3f3;
 }
 /* line 135, BootstrapSource\tables.less */
 table col[class*="col-"] {
@@ -2973,7 +2973,7 @@ table th[class*="col-"] {
 .table > thead > tr.active > th,
 .table > tbody > tr.active > th,
 .table > tfoot > tr.active > th {
-  background-color: #ecf0f1;
+  background-color: #f3f3f3;
 }
 /* line 20, BootstrapSource\mixins\table-row.less */
 .table-hover > tbody > tr > td.active:hover,
@@ -2981,7 +2981,7 @@ table th[class*="col-"] {
 .table-hover > tbody > tr.active:hover > td,
 .table-hover > tbody > tr:hover > .active,
 .table-hover > tbody > tr.active:hover > th {
-  background-color: #dde4e6;
+  background-color: #e6e6e6;
 }
 /* line 9, BootstrapSource\mixins\table-row.less */
 .table > thead > tr > td.success,
@@ -3087,7 +3087,7 @@ table th[class*="col-"] {
     margin-bottom: 15.75px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #ecf0f1;
+    border: 1px solid #f3f3f3;
   }
   /* line 183, BootstrapSource\tables.less */
   .table-responsive > .table {
@@ -3244,7 +3244,7 @@ output {
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-  background-color: #ecf0f1;
+  background-color: #f3f3f3;
   opacity: 1;
 }
 /* line 148, BootstrapSource\forms.less */
@@ -4664,7 +4664,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 1;
   color: #2c3e50;
   text-align: center;
-  background-color: #ecf0f1;
+  background-color: #f3f3f3;
   border: 2px solid #dce4ec;
   border-radius: 4px;
 }
@@ -4766,7 +4766,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #ecf0f1;
+  background-color: #f3f3f3;
 }
 /* line 31, BootstrapSource\navs.less */
 .nav > li.disabled > a {
@@ -4784,7 +4784,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #ecf0f1;
+  background-color: #f3f3f3;
   border-color: #0055a5;
 }
 /* line 59, BootstrapSource\navs.less */
@@ -4800,7 +4800,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 /* line 76, BootstrapSource\navs.less */
 .nav-tabs {
-  border-bottom: 1px solid #ecf0f1;
+  border-bottom: 1px solid #f3f3f3;
 }
 /* line 78, BootstrapSource\navs.less */
 .nav-tabs > li {
@@ -4816,7 +4816,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 /* line 89, BootstrapSource\navs.less */
 .nav-tabs > li > a:hover {
-  border-color: #ecf0f1 #ecf0f1 #ecf0f1;
+  border-color: #f3f3f3 #f3f3f3 #f3f3f3;
 }
 /* line 96, BootstrapSource\navs.less */
 .nav-tabs > li.active > a,
@@ -4824,7 +4824,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:focus {
   color: #2c3e50;
   background-color: #ffffff;
-  border: 1px solid #ecf0f1;
+  border: 1px solid #f3f3f3;
   border-bottom-color: transparent;
   cursor: default;
 }
@@ -4867,12 +4867,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs.nav-justified > .active > a,
 .nav-tabs.nav-justified > .active > a:hover,
 .nav-tabs.nav-justified > .active > a:focus {
-  border: 1px solid #ecf0f1;
+  border: 1px solid #f3f3f3;
 }
 @media (min-width: 768px) {
   /* line 206, BootstrapSource\navs.less */
   .nav-tabs.nav-justified > li > a {
-    border-bottom: 1px solid #ecf0f1;
+    border-bottom: 1px solid #f3f3f3;
     border-radius: 4px 4px 0 0;
   }
   /* line 210, BootstrapSource\navs.less */
@@ -4952,12 +4952,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs-justified > .active > a,
 .nav-tabs-justified > .active > a:hover,
 .nav-tabs-justified > .active > a:focus {
-  border: 1px solid #ecf0f1;
+  border: 1px solid #f3f3f3;
 }
 @media (min-width: 768px) {
   /* line 206, BootstrapSource\navs.less */
   .nav-tabs-justified > li > a {
-    border-bottom: 1px solid #ecf0f1;
+    border-bottom: 1px solid #f3f3f3;
     border-radius: 4px 4px 0 0;
   }
   /* line 210, BootstrapSource\navs.less */
@@ -5619,7 +5619,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 8px 15px;
   margin-bottom: 21px;
   list-style: none;
-  background-color: #ecf0f1;
+  background-color: #f3f3f3;
   border-radius: 4px;
 }
 /* line 13, BootstrapSource\breadcrumbs.less */
@@ -5702,7 +5702,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .disabled > a,
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
-  color: #ecf0f1;
+  color: #f3f3f3;
   background-color: #007cf2;
   border-color: transparent;
   cursor: not-allowed;
@@ -6123,7 +6123,7 @@ a.thumbnail.active {
   overflow: hidden;
   height: 21px;
   margin-bottom: 21px;
-  background-color: #ecf0f1;
+  background-color: #f3f3f3;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -6268,7 +6268,7 @@ a.thumbnail.active {
   padding: 10px 15px;
   margin-bottom: -1px;
   background-color: #ffffff;
-  border: 1px solid #ecf0f1;
+  border: 1px solid #f3f3f3;
 }
 /* line 31, BootstrapSource\list-group.less */
 .list-group-item:first-child {
@@ -6294,13 +6294,13 @@ a.list-group-item:hover,
 a.list-group-item:focus {
   text-decoration: none;
   color: #555555;
-  background-color: #ecf0f1;
+  background-color: #f3f3f3;
 }
 /* line 64, BootstrapSource\list-group.less */
 .list-group-item.disabled,
 .list-group-item.disabled:hover,
 .list-group-item.disabled:focus {
-  background-color: #ecf0f1;
+  background-color: #f3f3f3;
   color: #b4bcc2;
   cursor: not-allowed;
 }
@@ -6504,7 +6504,7 @@ a.list-group-item-danger.active:focus {
 .panel-footer {
   padding: 10px 15px;
   background-color: #0055a5;
-  border-top: 1px solid #ecf0f1;
+  border-top: 1px solid #f3f3f3;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
@@ -6631,7 +6631,7 @@ a.list-group-item-danger.active:focus {
 .panel > .panel-body + .table-responsive,
 .panel > .table + .panel-body,
 .panel > .table-responsive + .panel-body {
-  border-top: 1px solid #ecf0f1;
+  border-top: 1px solid #f3f3f3;
 }
 /* line 164, BootstrapSource\panels.less */
 .panel > .table > tbody:first-child > tr:first-child th,
@@ -6720,7 +6720,7 @@ a.list-group-item-danger.active:focus {
 /* line 232, BootstrapSource\panels.less */
 .panel-group .panel-heading + .panel-collapse > .panel-body,
 .panel-group .panel-heading + .panel-collapse > .list-group {
-  border-top: 1px solid #ecf0f1;
+  border-top: 1px solid #f3f3f3;
 }
 /* line 238, BootstrapSource\panels.less */
 .panel-group .panel-footer {
@@ -6728,30 +6728,30 @@ a.list-group-item-danger.active:focus {
 }
 /* line 240, BootstrapSource\panels.less */
 .panel-group .panel-footer + .panel-collapse .panel-body {
-  border-bottom: 1px solid #ecf0f1;
+  border-bottom: 1px solid #f3f3f3;
 }
 /* line 248, BootstrapSource\panels.less */
 .panel-default {
-  border-color: #ecf0f1;
+  border-color: #f3f3f3;
 }
 /* line 6, BootstrapSource\mixins\panels.less */
 .panel-default > .panel-heading {
   color: #2c3e50;
-  background-color: #ecf0f1;
-  border-color: #ecf0f1;
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
 }
 /* line 11, BootstrapSource\mixins\panels.less */
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #ecf0f1;
+  border-top-color: #f3f3f3;
 }
 /* line 14, BootstrapSource\mixins\panels.less */
 .panel-default > .panel-heading .badge {
-  color: #ecf0f1;
+  color: #f3f3f3;
   background-color: #2c3e50;
 }
 /* line 20, BootstrapSource\mixins\panels.less */
 .panel-default > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #ecf0f1;
+  border-bottom-color: #f3f3f3;
 }
 /* line 251, BootstrapSource\panels.less */
 .panel-primary {
@@ -6903,7 +6903,7 @@ a.list-group-item-danger.active:focus {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  background-color: #ecf0f1;
+  background-color: #f3f3f3;
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -8123,7 +8123,7 @@ table-bordered > tbody > tr > td,
 .table-bordered > tbody > tr > td,
 table-bordered > tfoot > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #ecf0f1;
+  border: 1px solid #f3f3f3;
 }
 /* line 125, BootstrapSource\bootswatch.less */
 .form-control,
@@ -8250,7 +8250,7 @@ input:focus {
 a.list-group-item.active,
 a.list-group-item.active:hover,
 a.list-group-item.active:focus {
-  border-color: #ecf0f1;
+  border-color: #f3f3f3;
 }
 /* line 272, BootstrapSource\bootswatch.less */
 a.list-group-item-success.active {

@@ -8,9 +8,11 @@
 // --------------------------------------------------------------------------------------------------------------------
 namespace BristolBallistics
 {
+    using System.Data.Entity;
     using System.Web.Mvc;
     using System.Web.Optimization;
     using System.Web.Routing;
+    using ServiceLayer;
 
     /// <summary>
     /// The mvc application.
@@ -26,6 +28,8 @@ namespace BristolBallistics
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            FlyballServiceLayer.Initialise();
         }
     }
 }
