@@ -1,0 +1,16 @@
+﻿@model CliftonAgility.Models.AdviceItem
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="@Model.Id-head">
+        <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#@Model.Id-body" aria-expanded="true" aria-controls="@Model.Id-body">
+                @Model.Title
+            </a>
+        </h4>
+    </div>
+    <div id="@Model.Id-body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="@Model.Id-head">
+        <div class="panel-body">
+            @Model.Description
+        </div>
+    </div>
+</div>

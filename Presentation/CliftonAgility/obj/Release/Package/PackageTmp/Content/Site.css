@@ -1,0 +1,196 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+header {
+    background-image: url(images/agility-tunnel.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow-y: visible;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.clublogo {
+    background-image: url(images/clublogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100px;
+}
+
+@media (max-width: 992px) {
+    .clublogo {
+        height: 183px;
+    }
+}
+
+@media (min-width: 992px) {
+    .clublogo {
+        height: 233px;
+    }
+}
+
+.btn .glyphicon {
+    font-size: 18px;
+    vertical-align: sub;
+    margin: 0 10px;
+}
+
+.jumbotron h1 {
+    font-weight: 800;
+}
+
+.navbar-brand-link {
+    margin-left: -25px;
+}
+
+.navbar, .content {
+    min-width: 300px;
+    margin-bottom: 80px;
+}
+
+.menulink {
+    margin-top: -60px;
+    padding-top: 60px;
+}
+
+.clone-header-template {
+    display: none;
+}
+
+.btn.pull-right {
+    margin-right: 10px;
+}
+
+legend {
+    width: 100%;
+    border-bottom: solid 1px #333;
+}
+
+/*Members dog header*/
+/*Start*/
+
+.members-dog-top {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.header-actions {
+    font-size: 20px;
+}
+
+    .header-actions a {
+        margin: 0 5px;
+    }
+
+#pet-kcname::before {
+    content: '(';
+}
+
+#pet-kcname::after {
+    content: ')';
+}
+
+.clone-container {
+    background-color: #ecf0f1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    min-height: 20px;
+    padding: 19px;
+}
+
+/*Finish*/
+/*Members dog header*/
+
+.address-block > span {
+    display: block;
+    font-weight: 600;
+}
+
+    .address-block > span::after {
+        content: ',';
+    }
+
+    .address-block > span:last-child::after {
+        content: '';
+    }
+
+.map {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.clothing-panel {
+    height: 190px;
+}
+
+    .clothing-panel p {
+        overflow: hidden;
+        height: 90px;
+        background: linear-gradient(transparent 80px, white);
+    }
+
+.panel-group .panel-title a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.panel-group .panel-heading {
+    padding: 0;
+}
+
+.panel-group .panel-title a::after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    vertical-align: bottom;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e114";
+    margin-left: 10px;
+}
+
+.fb-foot {
+    padding: 3px 6px;
+    background-color: #fff;
+}
+
+.panel-group .panel-title a.collapsed::after {
+    content: "\e080";
+}
+
+.map-panel {
+    position: fixed;
+    right: 10px;
+    top: 80px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 15px 10px;
+    z-index: 100;
+}

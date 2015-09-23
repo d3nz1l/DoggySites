@@ -1,0 +1,16 @@
+﻿@{
+    var trainersList = new List<string> { "Bryan Reakes", "Carol Avenell", "David Sweeney", "Jayne Redgers", "Jean Boniface", "Louise Gilmore", "Maureen Reakes", "Pauline Pearce", "Rob Kilby", "Sorcha Price" };
+}
+
+<div class="row">
+    @foreach (var trainer in trainersList)
+    {
+        <div class="col-md-3 col-sm-4  text-center">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h4>@trainer</h4>
+                </div>
+            </div>
+        </div>
+    }
+</div>

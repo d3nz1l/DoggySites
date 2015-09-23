@@ -1,0 +1,20 @@
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.IContext: type is an interface.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.IRepository`2: type is an interface.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.IEntityRepository`2: type is an interface.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.EntityRepository`2+<>c__DisplayClass8: type is not supported because of internal limitations.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.EntityRepository`2+<AddAsync>d__19: type is not supported because of internal limitations.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.EntityRepository`2+<AddAsync>d__1c: type is not supported because of internal limitations.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.EntityRepository`2+<DeleteAsync>d__25: type is not supported because of internal limitations.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.EntityRepository`2+<DeleteAsync>d__28: type is not supported because of internal limitations.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.EntityRepository`2+<GetAllAsync>d__0: type is not supported because of internal limitations.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.EntityRepository`2+<GetAllIncludingAsync>d__4: type is not supported because of internal limitations.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.EntityRepository`2+<GetByIdAsync>d__a: type is not supported because of internal limitations.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.EntityRepository`2+<GetByIdIncludingAsync>d__d: type is not supported because of internal limitations.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.EntityRepository`2+<GetByWhereAsync>d__11: type is not supported because of internal limitations.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.EntityRepository`2+<GetByWhereIncludingAsync>d__15: type is not supported because of internal limitations.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.EntityRepository`2+<UpdateAsync>d__1f: type is not supported because of internal limitations.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.EntityRepository`2+<UpdateAsync>d__22: type is not supported because of internal limitations.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.IEntity`1: type is an interface.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for Doggy.Persistence.IWebpageLoader: type is an interface.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.WebsiteRepository`2+<>c__DisplayClass1: type is not supported because of internal limitations.
+C:\GitHub\DoggySites\UnitTests\Fakes\GenericRepository.fakes : warning : Cannot generate shim for GenericRepository.WebsiteRepository`2+<LoadWebpage>d__3: type is not supported because of internal limitations.

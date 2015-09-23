@@ -1,0 +1,16 @@
+﻿@model CliftonAgility.Models.PostalAddress
+
+<address class="address-block">
+    @if (Model.HouseNameNumber.Any() && char.IsDigit(Model.HouseNameNumber.First()))
+    {
+        <span>@Model.HouseNameNumber&nbsp;@Model.StreetName</span>
+    }
+    else
+    {
+        <span>@Model.HouseNameNumber</span><span>@Model.StreetName</span>
+    }
+    @Html.DisplayFor(m => Model.AddressLine2)
+    @Html.DisplayFor(m => Model.AddressLine3)
+    @Html.DisplayFor(m => Model.AddressLine4)
+    @Html.DisplayFor(m => Model.Postcode)
+</address>

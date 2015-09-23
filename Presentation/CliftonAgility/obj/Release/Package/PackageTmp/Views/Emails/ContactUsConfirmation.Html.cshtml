@@ -1,0 +1,29 @@
+﻿@model CliftonAgility.Models.Emails.ContactUsConfirmationEmail
+Content-Type: text/html; charset=utf-8
+
+<html>
+    <body>
+        @Html.Partial("_SharedStyles")
+        <p>Hi</p>
+        <p>Thank you for your interest in Clifton Agility Club. Your message has been forwarded to <a href="mailto:?@Model.EmailAddress">@Model.ReplyTo</a> who will get back to as quickly as they can.</p>
+        <p>A copy of your message is shown below. If anything is wrong please let us know.</p>
+        <table>
+            <tr>
+                <th>Name:</th>
+                <td>@Model.Name</td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td><a href="mailto:?@Model.EmailAddress">@Model.EmailAddress</a></td>
+            </tr>
+            <tr>
+                <th>Phone:</th>
+                <td>@Model.PhoneNumber</td>
+            </tr>
+            <tr>
+                <th>Message:</th>
+                <td>@Model.Message</td>
+            </tr>
+        </table>
+    </body>
+</html>

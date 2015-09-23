@@ -1,0 +1,10 @@
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\Menu\Menu.xsd
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\DoggySites.Presentation.Common.dll
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\DoggySites.Presentation.Common.pdb
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\System.Web.Mvc.dll
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\Microsoft.Web.Infrastructure.xml
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\System.Web.Mvc.xml
+C:\GitHub\DoggySites\Presentation\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+C:\GitHub\DoggySites\Presentation\Common\obj\Release\DoggySites.Presentation.Common.dll
+C:\GitHub\DoggySites\Presentation\Common\obj\Release\DoggySites.Presentation.Common.pdb

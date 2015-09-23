@@ -1,0 +1,23 @@
+﻿@{
+    var committee = new Dictionary<string, string> { { "Rob Kilby", "Chair Person" }, { "Jean Boniface", "Secretary" }, { "Maureen Reakes", "Treasurer" }, { "Rachel Davey", "Membership Co-ordinator" }, { "Louise Gilmore", "" }, { "Pauline Pearce", "" }, { "Carol Wye", "" } };
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h2>The Committee</h2>
+    </div>
+    <div class="col-md-6">
+        <img alt="" src="@Url.Content("~/Content/images/committee.jpg")" class="img-responsive center-block" />
+    </div>
+    <div class="col-md-6">
+        <table class="table table-striped">
+            @foreach (var member in committee)
+            {
+                <tr>
+                    <td>@member.Key</td>
+                    <td>@member.Value</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

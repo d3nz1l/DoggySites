@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "About Us";
+    ViewBag.HeaderText = "Information about the club including training and the committee";
+}
+
+<h1>About Clifton Agility Club</h1>
+
+<div id="the-club" class="row menulink">
+    <div class="col-lg-12">
+        <h2>The Club</h2>
+    </div>
+    <div class="col-md-6">
+        <img alt="" src="@Url.Content("~/Content/images/Loki-jumping.jpg")" class="img-responsive center-block" />
+    </div>
+    <div class="col-md-6">
+        <p>
+            Clifton Agility Club was started in the eighties and has been thriving ever since then. We started dog agility training in the Winford Riding for the Disabled Centre and moved to our present site at Chelvey Court Farm in the nineties.
+        </p>
+        <p>
+            We are Kennel Club registered training club and have running classes for over 30 years. Our trainers have a wealth of experience and are happing to help where ever possible. We cater for all levels and have classes from Beginner to Advanced.
+        </p>
+        <p>
+            We are also social club and enjoy quite a few social events throughout the year. These include the summer barbecue, the Christmas meal and New Year dog walk and meal. New members are always welcome, as well as there families.
+        </p>
+    </div>
+</div>
+<div id="training" class="row menulink">
+    <div class="col-lg-12">
+        <h2>Training</h2>
+        <p>
+            We train every Wednesday between 7pm and 10pm. This is split between 6 classes, with 2 classes working at the same time. Each class is 45min long, and beginners starting in Class 1.
+        </p>
+        <h3>
+            Our trainers
+        </h3>
+    </div>
+    @Html.Partial("_TheTrainers")
+</div>
+<div id="the-committee" class="row menulink">
+    @Html.Partial("_TheCommittee")
+</div>
+
+

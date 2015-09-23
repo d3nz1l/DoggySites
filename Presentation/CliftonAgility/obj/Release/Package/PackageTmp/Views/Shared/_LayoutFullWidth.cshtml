@@ -1,0 +1,12 @@
+﻿
+@{
+    Layout = "_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    
+    @RenderBody()
+</div>
+
+@section headScripts { @RenderSection("headScripts", required: false) }
+@section scripts { @RenderSection("scripts", required: false) }

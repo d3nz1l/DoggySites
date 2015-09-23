@@ -1,0 +1,533 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GenericRepository.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Doggy.Persistence.Fakes.StubIWebpageLoader">
+            <summary>Stub type of Doggy.Persistence.IWebpageLoader</summary>
+        </member>
+        <member name="M:Doggy.Persistence.Fakes.StubIWebpageLoader.#ctor">
+            <summary>Initializes a new instance of type StubIWebpageLoader</summary>
+        </member>
+        <member name="M:Doggy.Persistence.Fakes.StubIWebpageLoader.gr::Doggy#Persistence#IWebpageLoader#LoadPage(System.String)">
+            <summary>Sets the stub of IWebpageLoader.LoadPage(String url)</summary>
+        </member>
+        <member name="F:Doggy.Persistence.Fakes.StubIWebpageLoader.LoadPageString">
+            <summary>Sets the stub of IWebpageLoader.LoadPage(String url)</summary>
+        </member>
+        <member name="T:GenericRepository.Fakes.ShimEntityContext">
+            <summary>Shim type of GenericRepository.EntityContext</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityContext.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityContext.#ctor(GenericRepository.EntityContext)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityContext.Bind(System.Data.Entity.Infrastructure.IObjectContextAdapter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityContext.Bind(GenericRepository.IContext)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityContext.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityContext.EntitySetOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Data.Entity.IDbSet{``0}})">
+            <summary>Sets the shim of EntityContext.EntitySet()</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityContext.GetEntityEntryOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.Data.Entity.Infrastructure.DbEntityEntry})">
+            <summary>Sets the shim of EntityContext.GetEntityEntry(!!0 entity)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityContext.MarkAsAddedOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0})">
+            <summary>Sets the shim of EntityContext.MarkAsAdded(!!0 entity)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityContext.MarkAsDeletedOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0})">
+            <summary>Sets the shim of EntityContext.MarkAsDeleted(!!0 entity)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityContext.MarkAsModifiedOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0})">
+            <summary>Sets the shim of EntityContext.MarkAsModified(!!0 entity)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityContext.ConstructorString">
+            <summary>Sets the shim of EntityContext.EntityContext(String connectionStringName)</summary>
+        </member>
+        <member name="T:GenericRepository.Fakes.ShimEntityContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityContext.AllInstances.EntitySetOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{GenericRepository.EntityContext,System.Data.Entity.IDbSet{``0}})">
+            <summary>Sets the shim of EntityContext.EntitySet()</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityContext.AllInstances.GetEntityEntryOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{GenericRepository.EntityContext,``0,System.Data.Entity.Infrastructure.DbEntityEntry})">
+            <summary>Sets the shim of EntityContext.GetEntityEntry(!!0 entity)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityContext.AllInstances.MarkAsAddedOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GenericRepository.EntityContext,``0})">
+            <summary>Sets the shim of EntityContext.MarkAsAdded(!!0 entity)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityContext.AllInstances.MarkAsDeletedOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GenericRepository.EntityContext,``0})">
+            <summary>Sets the shim of EntityContext.MarkAsDeleted(!!0 entity)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityContext.AllInstances.MarkAsModifiedOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GenericRepository.EntityContext,``0})">
+            <summary>Sets the shim of EntityContext.MarkAsModified(!!0 entity)</summary>
+        </member>
+        <member name="T:GenericRepository.Fakes.ShimEntityRepository`2">
+            <summary>Shim type of GenericRepository.EntityRepository`2</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityRepository`2.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityRepository`2.#ctor(GenericRepository.EntityRepository{`0,`1})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityRepository`2.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityRepository`2.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityRepository`2.Bind(GenericRepository.IEntityRepository{`0,`1})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimEntityRepository`2.Bind(GenericRepository.IRepository{`0,`1})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.AddAsyncIEnumerableOfT0">
+            <summary>Sets the shim of EntityRepository`2.AddAsync(IEnumerable`1&lt;!0&gt; entities)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.AddAsyncT0">
+            <summary>Sets the shim of EntityRepository`2.AddAsync(!0 entity)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.ConstructorIContext">
+            <summary>Sets the shim of EntityRepository`2.EntityRepository`2(IContext entityContext)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.ContextGet">
+            <summary>Sets the shim of EntityRepository`2.get_Context()</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.ContextSetIContext">
+            <summary>Sets the shim of EntityRepository`2.set_Context(IContext value)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.DefaultIncludeExpressionsGet">
+            <summary>Sets the shim of EntityRepository`2.get_DefaultIncludeExpressions()</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.DeleteAsyncIEnumerableOfT0">
+            <summary>Sets the shim of EntityRepository`2.DeleteAsync(IEnumerable`1&lt;!0&gt; entities)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.DeleteAsyncT0">
+            <summary>Sets the shim of EntityRepository`2.DeleteAsync(!0 entity)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.GetAllAsync">
+            <summary>Sets the shim of EntityRepository`2.GetAllAsync()</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.GetAllIncludingAsyncExpressionOfFuncOfT0ObjectArray">
+            <summary>Sets the shim of EntityRepository`2.GetAllIncludingAsync(Expression`1&lt;Func`2&lt;!0,Object&gt;&gt;[] includeExpressions)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.GetByIdAsyncT1">
+            <summary>Sets the shim of EntityRepository`2.GetByIdAsync(!1 id)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.GetByIdIncludingAsyncT1ExpressionOfFuncOfT0ObjectArray">
+            <summary>Sets the shim of EntityRepository`2.GetByIdIncludingAsync(!1 id, Expression`1&lt;Func`2&lt;!0,Object&gt;&gt;[] includeExpressions)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.GetByWhereAsyncExpressionOfFuncOfT0Boolean">
+            <summary>Sets the shim of EntityRepository`2.GetByWhereAsync(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filterExpression)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.GetByWhereIncludingAsyncExpressionOfFuncOfT0BooleanExpressionOfFuncOfT0ObjectArray">
+            <summary>Sets the shim of EntityRepository`2.GetByWhereIncludingAsync(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filterExpression, Expression`1&lt;Func`2&lt;!0,Object&gt;&gt;[] includeExpressions)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.UpdateAsyncIEnumerableOfT0">
+            <summary>Sets the shim of EntityRepository`2.UpdateAsync(IEnumerable`1&lt;!0&gt; entities)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.UpdateAsyncT0">
+            <summary>Sets the shim of EntityRepository`2.UpdateAsync(!0 entity)</summary>
+        </member>
+        <member name="T:GenericRepository.Fakes.ShimEntityRepository`2.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.AllInstances.AddAsyncIEnumerableOfT0">
+            <summary>Sets the shim of EntityRepository`2.AddAsync(IEnumerable`1&lt;!0&gt; entities)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.AllInstances.AddAsyncT0">
+            <summary>Sets the shim of EntityRepository`2.AddAsync(!0 entity)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.AllInstances.ContextGet">
+            <summary>Sets the shim of EntityRepository`2.get_Context()</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.AllInstances.ContextSetIContext">
+            <summary>Sets the shim of EntityRepository`2.set_Context(IContext value)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.AllInstances.DefaultIncludeExpressionsGet">
+            <summary>Sets the shim of EntityRepository`2.get_DefaultIncludeExpressions()</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.AllInstances.DeleteAsyncIEnumerableOfT0">
+            <summary>Sets the shim of EntityRepository`2.DeleteAsync(IEnumerable`1&lt;!0&gt; entities)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.AllInstances.DeleteAsyncT0">
+            <summary>Sets the shim of EntityRepository`2.DeleteAsync(!0 entity)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.AllInstances.GetAllAsync">
+            <summary>Sets the shim of EntityRepository`2.GetAllAsync()</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.AllInstances.GetAllIncludingAsyncExpressionOfFuncOfT0ObjectArray">
+            <summary>Sets the shim of EntityRepository`2.GetAllIncludingAsync(Expression`1&lt;Func`2&lt;!0,Object&gt;&gt;[] includeExpressions)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.AllInstances.GetByIdAsyncT1">
+            <summary>Sets the shim of EntityRepository`2.GetByIdAsync(!1 id)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.AllInstances.GetByIdIncludingAsyncT1ExpressionOfFuncOfT0ObjectArray">
+            <summary>Sets the shim of EntityRepository`2.GetByIdIncludingAsync(!1 id, Expression`1&lt;Func`2&lt;!0,Object&gt;&gt;[] includeExpressions)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.AllInstances.GetByWhereAsyncExpressionOfFuncOfT0Boolean">
+            <summary>Sets the shim of EntityRepository`2.GetByWhereAsync(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filterExpression)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.AllInstances.GetByWhereIncludingAsyncExpressionOfFuncOfT0BooleanExpressionOfFuncOfT0ObjectArray">
+            <summary>Sets the shim of EntityRepository`2.GetByWhereIncludingAsync(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filterExpression, Expression`1&lt;Func`2&lt;!0,Object&gt;&gt;[] includeExpressions)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.AllInstances.UpdateAsyncIEnumerableOfT0">
+            <summary>Sets the shim of EntityRepository`2.UpdateAsync(IEnumerable`1&lt;!0&gt; entities)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimEntityRepository`2.AllInstances.UpdateAsyncT0">
+            <summary>Sets the shim of EntityRepository`2.UpdateAsync(!0 entity)</summary>
+        </member>
+        <member name="T:GenericRepository.Fakes.ShimWebsiteRepository`2">
+            <summary>Shim type of GenericRepository.WebsiteRepository`2</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimWebsiteRepository`2.#ctor(GenericRepository.WebsiteRepository{`0,`1})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimWebsiteRepository`2.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimWebsiteRepository`2.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.ShimWebsiteRepository`2.Bind(GenericRepository.IRepository{`0,`1})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimWebsiteRepository`2.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimWebsiteRepository`2.ConstructorIWebpageLoader">
+            <summary>Sets the shim of WebsiteRepository`2.WebsiteRepository`2(IWebpageLoader pageLoader)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimWebsiteRepository`2.LoadWebpageString">
+            <summary>Sets the shim of WebsiteRepository`2.LoadWebpage(String url)</summary>
+        </member>
+        <member name="T:GenericRepository.Fakes.ShimWebsiteRepository`2.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.ShimWebsiteRepository`2.AllInstances.LoadWebpageString">
+            <summary>Sets the shim of WebsiteRepository`2.LoadWebpage(String url)</summary>
+        </member>
+        <member name="T:GenericRepository.Fakes.StubEntityContext">
+            <summary>Stub type of GenericRepository.EntityContext</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubEntityContext.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubEntityContext.Dispose(System.Boolean)">
+            <summary>Sets the stub of DbContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubEntityContext.DisposeBoolean">
+            <summary>Sets the stub of DbContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubEntityContext.Equals(System.Object)">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubEntityContext.EqualsObject">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubEntityContext.GetHashCode">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubEntityContext.GetHashCode01">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubEntityContext.InitializeStub">
+            <summary>Initializes a new instance of type StubEntityContext</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubEntityContext.OnModelCreating(System.Data.Entity.DbModelBuilder)">
+            <summary>Sets the stub of DbContext.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubEntityContext.OnModelCreatingDbModelBuilder">
+            <summary>Sets the stub of DbContext.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubEntityContext.SaveChanges">
+            <summary>Sets the stub of DbContext.SaveChanges()</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubEntityContext.SaveChanges01">
+            <summary>Sets the stub of DbContext.SaveChanges()</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubEntityContext.SaveChangesAsync">
+            <summary>Sets the stub of DbContext.SaveChangesAsync()</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubEntityContext.SaveChangesAsync(System.Threading.CancellationToken)">
+            <summary>Sets the stub of DbContext.SaveChangesAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubEntityContext.SaveChangesAsync01">
+            <summary>Sets the stub of DbContext.SaveChangesAsync()</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubEntityContext.SaveChangesAsyncCancellationToken">
+            <summary>Sets the stub of DbContext.SaveChangesAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubEntityContext.Set(System.Type)">
+            <summary>Sets the stub of DbContext.Set(Type entityType)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubEntityContext.Set``1">
+            <summary>Sets the stub of DbContext.Set()</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubEntityContext.SetOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Data.Entity.DbSet{``0}})">
+            <summary>Sets stubs of Set()</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubEntityContext.SetType">
+            <summary>Sets the stub of DbContext.Set(Type entityType)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubEntityContext.ShouldValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry)">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubEntityContext.ShouldValidateEntityDbEntityEntry">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubEntityContext.ToString">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubEntityContext.ToString01">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubEntityContext.ValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry,System.Collections.Generic.IDictionary{System.Object,System.Object})">
+            <summary>Sets the stub of DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubEntityContext.ValidateEntityDbEntityEntryIDictionaryOfObjectObject">
+            <summary>Sets the stub of DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.StubEntityContext.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.StubEntityContext.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.StubEntityContext.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:GenericRepository.Fakes.StubEntityRepository`2">
+            <summary>Stub type of GenericRepository.EntityRepository`2</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubEntityRepository`2.#ctor(GenericRepository.IContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubEntityRepository`2.DefaultIncludeExpressionsGet">
+            <summary>Sets the stub of EntityRepository`2.get_DefaultIncludeExpressions()</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubEntityRepository`2.InitializeStub">
+            <summary>Initializes a new instance of type StubEntityRepository</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.StubEntityRepository`2.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.StubEntityRepository`2.DefaultIncludeExpressions">
+            <summary>Sets the stub of EntityRepository`2.get_DefaultIncludeExpressions()</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.StubEntityRepository`2.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.StubEntityRepository`2.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:GenericRepository.Fakes.StubIContext">
+            <summary>Stub type of GenericRepository.IContext</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIContext.#ctor">
+            <summary>Initializes a new instance of type StubIContext</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubIContext.Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIContext.EntitySetOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Data.Entity.IDbSet{``0}})">
+            <summary>Sets stubs of EntitySet()</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIContext.gr::GenericRepository#IContext#EntitySet``1">
+            <summary>Sets the stub of IContext.EntitySet()</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIContext.gr::GenericRepository#IContext#MarkAsAdded``1(``0)">
+            <summary>Sets the stub of IContext.MarkAsAdded(!!0 entity)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIContext.gr::GenericRepository#IContext#MarkAsDeleted``1(``0)">
+            <summary>Sets the stub of IContext.MarkAsDeleted(!!0 entity)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIContext.gr::GenericRepository#IContext#MarkAsModified``1(``0)">
+            <summary>Sets the stub of IContext.MarkAsModified(!!0 entity)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIContext.gr::GenericRepository#IContext#SaveChangesAsync">
+            <summary>Sets the stub of IContext.SaveChangesAsync()</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIContext.MarkAsAddedOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0})">
+            <summary>Sets stubs of MarkAsAdded(!!0 entity)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIContext.MarkAsDeletedOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0})">
+            <summary>Sets stubs of MarkAsDeleted(!!0 entity)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIContext.MarkAsModifiedOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0})">
+            <summary>Sets stubs of MarkAsModified(!!0 entity)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubIContext.SaveChangesAsync">
+            <summary>Sets the stub of IContext.SaveChangesAsync()</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIContext.global::System#IDisposable#Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="T:GenericRepository.Fakes.StubIEntity`1">
+            <summary>Stub type of GenericRepository.IEntity`1</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIEntity`1.#ctor">
+            <summary>Initializes a new instance of type StubIEntity</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIEntity`1.AttachBackingFieldToId">
+            <summary>Attaches delegates to emulate StubIEntity.Id as a property with a backing field.</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubIEntity`1.IdGet">
+            <summary>Sets the stub of IEntity`1.get_Id()</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubIEntity`1.IdSetT0">
+            <summary>Sets the stub of IEntity`1.set_Id(!0 value)</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.StubIEntity`1.gr::GenericRepository#IEntity{T}#Id">
+            <summary>Sets the stub of IEntity`1.get_Id()</summary>
+        </member>
+        <member name="T:GenericRepository.Fakes.StubIEntityRepository`2">
+            <summary>Stub type of GenericRepository.IEntityRepository`2</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIEntityRepository`2.#ctor">
+            <summary>Initializes a new instance of type StubIEntityRepository</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubIEntityRepository`2.AddAsyncIEnumerableOfT0">
+            <summary>Sets the stub of IEntityRepository`2.AddAsync(IEnumerable`1&lt;!0&gt; entities)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubIEntityRepository`2.AddAsyncT0">
+            <summary>Sets the stub of IEntityRepository`2.AddAsync(!0 entity)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubIEntityRepository`2.DeleteAsyncIEnumerableOfT0">
+            <summary>Sets the stub of IEntityRepository`2.DeleteAsync(IEnumerable`1&lt;!0&gt; entities)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubIEntityRepository`2.DeleteAsyncT0">
+            <summary>Sets the stub of IEntityRepository`2.DeleteAsync(!0 entity)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIEntityRepository`2.gr::GenericRepository#IEntityRepository{TEntity@TId}#AddAsync(System.Collections.Generic.IEnumerable{`0})">
+            <summary>Sets the stub of IEntityRepository`2.AddAsync(IEnumerable`1&lt;!0&gt; entities)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIEntityRepository`2.gr::GenericRepository#IEntityRepository{TEntity@TId}#AddAsync(`0)">
+            <summary>Sets the stub of IEntityRepository`2.AddAsync(!0 entity)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIEntityRepository`2.gr::GenericRepository#IEntityRepository{TEntity@TId}#DeleteAsync(`0)">
+            <summary>Sets the stub of IEntityRepository`2.DeleteAsync(!0 entity)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIEntityRepository`2.gr::GenericRepository#IEntityRepository{TEntity@TId}#DeleteAsync(System.Collections.Generic.IEnumerable{`0})">
+            <summary>Sets the stub of IEntityRepository`2.DeleteAsync(IEnumerable`1&lt;!0&gt; entities)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIEntityRepository`2.gr::GenericRepository#IEntityRepository{TEntity@TId}#GetAllIncludingAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])">
+            <summary>Sets the stub of IEntityRepository`2.GetAllIncludingAsync(Expression`1&lt;Func`2&lt;!0,Object&gt;&gt;[] includeExpressions)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIEntityRepository`2.gr::GenericRepository#IEntityRepository{TEntity@TId}#GetByIdIncludingAsync(`1,System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])">
+            <summary>Sets the stub of IEntityRepository`2.GetByIdIncludingAsync(!1 id, Expression`1&lt;Func`2&lt;!0,Object&gt;&gt;[] includeExpressions)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIEntityRepository`2.gr::GenericRepository#IEntityRepository{TEntity@TId}#GetByWhereAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>Sets the stub of IEntityRepository`2.GetByWhereAsync(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filterExpression)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIEntityRepository`2.gr::GenericRepository#IEntityRepository{TEntity@TId}#GetByWhereIncludingAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])">
+            <summary>Sets the stub of IEntityRepository`2.GetByWhereIncludingAsync(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filterExpression, Expression`1&lt;Func`2&lt;!0,Object&gt;&gt;[] includeExpressions)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIEntityRepository`2.gr::GenericRepository#IEntityRepository{TEntity@TId}#UpdateAsync(System.Collections.Generic.IEnumerable{`0})">
+            <summary>Sets the stub of IEntityRepository`2.UpdateAsync(IEnumerable`1&lt;!0&gt; entities)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIEntityRepository`2.gr::GenericRepository#IEntityRepository{TEntity@TId}#UpdateAsync(`0)">
+            <summary>Sets the stub of IEntityRepository`2.UpdateAsync(!0 entity)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIEntityRepository`2.gr::GenericRepository#IRepository{TEntity@TId}#GetAllAsync">
+            <summary>Sets the stub of IRepository`2.GetAllAsync()</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIEntityRepository`2.gr::GenericRepository#IRepository{TEntity@TId}#GetByIdAsync(`1)">
+            <summary>Sets the stub of IRepository`2.GetByIdAsync(!1 id)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubIEntityRepository`2.GetAllAsync">
+            <summary>Sets the stub of IRepository`2.GetAllAsync()</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubIEntityRepository`2.GetAllIncludingAsyncExpressionOfFuncOfT0ObjectArray">
+            <summary>Sets the stub of IEntityRepository`2.GetAllIncludingAsync(Expression`1&lt;Func`2&lt;!0,Object&gt;&gt;[] includeExpressions)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubIEntityRepository`2.GetByIdAsyncT1">
+            <summary>Sets the stub of IRepository`2.GetByIdAsync(!1 id)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubIEntityRepository`2.GetByIdIncludingAsyncT1ExpressionOfFuncOfT0ObjectArray">
+            <summary>Sets the stub of IEntityRepository`2.GetByIdIncludingAsync(!1 id, Expression`1&lt;Func`2&lt;!0,Object&gt;&gt;[] includeExpressions)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubIEntityRepository`2.GetByWhereAsyncExpressionOfFuncOfT0Boolean">
+            <summary>Sets the stub of IEntityRepository`2.GetByWhereAsync(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filterExpression)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubIEntityRepository`2.GetByWhereIncludingAsyncExpressionOfFuncOfT0BooleanExpressionOfFuncOfT0ObjectArray">
+            <summary>Sets the stub of IEntityRepository`2.GetByWhereIncludingAsync(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filterExpression, Expression`1&lt;Func`2&lt;!0,Object&gt;&gt;[] includeExpressions)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubIEntityRepository`2.UpdateAsyncIEnumerableOfT0">
+            <summary>Sets the stub of IEntityRepository`2.UpdateAsync(IEnumerable`1&lt;!0&gt; entities)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubIEntityRepository`2.UpdateAsyncT0">
+            <summary>Sets the stub of IEntityRepository`2.UpdateAsync(!0 entity)</summary>
+        </member>
+        <member name="T:GenericRepository.Fakes.StubIRepository`2">
+            <summary>Stub type of GenericRepository.IRepository`2</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIRepository`2.#ctor">
+            <summary>Initializes a new instance of type StubIRepository</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIRepository`2.gr::GenericRepository#IRepository{TEntity@TId}#GetAllAsync">
+            <summary>Sets the stub of IRepository`2.GetAllAsync()</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubIRepository`2.gr::GenericRepository#IRepository{TEntity@TId}#GetByIdAsync(`1)">
+            <summary>Sets the stub of IRepository`2.GetByIdAsync(!1 id)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubIRepository`2.GetAllAsync">
+            <summary>Sets the stub of IRepository`2.GetAllAsync()</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubIRepository`2.GetByIdAsyncT1">
+            <summary>Sets the stub of IRepository`2.GetByIdAsync(!1 id)</summary>
+        </member>
+        <member name="T:GenericRepository.Fakes.StubWebsiteRepository`2">
+            <summary>Stub type of GenericRepository.WebsiteRepository`2</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubWebsiteRepository`2.#ctor(Doggy.Persistence.IWebpageLoader)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubWebsiteRepository`2.GetAllAsync">
+            <summary>Sets the stub of WebsiteRepository`2.GetAllAsync()</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubWebsiteRepository`2.GetAllAsync01">
+            <summary>Sets the stub of WebsiteRepository`2.GetAllAsync()</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubWebsiteRepository`2.GetByIdAsync(`1)">
+            <summary>Sets the stub of WebsiteRepository`2.GetByIdAsync(!1 id)</summary>
+        </member>
+        <member name="F:GenericRepository.Fakes.StubWebsiteRepository`2.GetByIdAsyncT1">
+            <summary>Sets the stub of WebsiteRepository`2.GetByIdAsync(!1 id)</summary>
+        </member>
+        <member name="M:GenericRepository.Fakes.StubWebsiteRepository`2.InitializeStub">
+            <summary>Initializes a new instance of type StubWebsiteRepository</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.StubWebsiteRepository`2.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.StubWebsiteRepository`2.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:GenericRepository.Fakes.StubWebsiteRepository`2.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>
