@@ -27,3 +27,12 @@ C:\GitHub\DoggySites\Presentation\Common\obj\Debug\DoggySites.Presentation.Commo
 C:\GitHub\DoggySites\Presentation\Common\obj\Debug\DoggySites.Presentation.Common.pdb
 C:\GitHub\DoggySites\Presentation\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
 C:\GitHub\DoggySites\Presentation\Common\bin\Debug\DoggySites.Presentation.Common.dll.config
+C:\Git\DoggySites\Presentation\Common\bin\Debug\Menu\Menu.xsd
+C:\Git\DoggySites\Presentation\Common\bin\Debug\DoggySites.Presentation.Common.dll.config
+C:\Git\DoggySites\Presentation\Common\bin\Debug\DoggySites.Presentation.Common.dll
+C:\Git\DoggySites\Presentation\Common\bin\Debug\DoggySites.Presentation.Common.pdb
+C:\Git\DoggySites\Presentation\Common\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Git\DoggySites\Presentation\Common\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Git\DoggySites\Presentation\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Git\DoggySites\Presentation\Common\obj\Debug\DoggySites.Presentation.Common.dll
+C:\Git\DoggySites\Presentation\Common\obj\Debug\DoggySites.Presentation.Common.pdb

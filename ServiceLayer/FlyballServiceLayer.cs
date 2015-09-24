@@ -19,6 +19,11 @@ namespace ServiceLayer
     {
         public FlyballServiceLayer()
         {
+            Initialise();
+        }
+
+        public void GetFastestTeamTimes()
+        {
             
         }
 

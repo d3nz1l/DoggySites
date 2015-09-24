@@ -43,3 +43,5 @@ C:\GitHub\DoggySites\ServiceLayer\bin\Debug\HtmlAgilityPack.pdb
 C:\GitHub\DoggySites\ServiceLayer\bin\Debug\HtmlAgilityPack.xml
 C:\GitHub\DoggySites\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
 C:\GitHub\DoggySites\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Git\DoggySites\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+C:\Git\DoggySites\ServiceLayer\obj\Debug\ServiceLayer.dll

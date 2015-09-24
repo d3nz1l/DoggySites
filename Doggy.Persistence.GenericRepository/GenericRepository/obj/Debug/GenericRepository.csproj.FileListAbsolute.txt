@@ -11,3 +11,16 @@ C:\GitHub\DoggySites\Doggy.Persistence.GenericRepository\GenericRepository\bin\D
 C:\GitHub\DoggySites\Doggy.Persistence.GenericRepository\GenericRepository\obj\Debug\GenericRepository.csprojResolveAssemblyReference.cache
 C:\GitHub\DoggySites\Doggy.Persistence.GenericRepository\GenericRepository\obj\Debug\GenericRepository.dll
 C:\GitHub\DoggySites\Doggy.Persistence.GenericRepository\GenericRepository\obj\Debug\GenericRepository.pdb
+C:\Git\DoggySites\Doggy.Persistence.GenericRepository\GenericRepository\bin\Debug\GenericRepository.dll.config
+C:\Git\DoggySites\Doggy.Persistence.GenericRepository\GenericRepository\bin\Debug\GenericRepository.dll
+C:\Git\DoggySites\Doggy.Persistence.GenericRepository\GenericRepository\bin\Debug\GenericRepository.pdb
+C:\Git\DoggySites\Doggy.Persistence.GenericRepository\GenericRepository\bin\Debug\EntityFramework.dll
+C:\Git\DoggySites\Doggy.Persistence.GenericRepository\GenericRepository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Git\DoggySites\Doggy.Persistence.GenericRepository\GenericRepository\bin\Debug\HtmlAgilityPack.dll
+C:\Git\DoggySites\Doggy.Persistence.GenericRepository\GenericRepository\bin\Debug\EntityFramework.xml
+C:\Git\DoggySites\Doggy.Persistence.GenericRepository\GenericRepository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Git\DoggySites\Doggy.Persistence.GenericRepository\GenericRepository\bin\Debug\HtmlAgilityPack.pdb
+C:\Git\DoggySites\Doggy.Persistence.GenericRepository\GenericRepository\bin\Debug\HtmlAgilityPack.xml
+C:\Git\DoggySites\Doggy.Persistence.GenericRepository\GenericRepository\obj\Debug\GenericRepository.csprojResolveAssemblyReference.cache
+C:\Git\DoggySites\Doggy.Persistence.GenericRepository\GenericRepository\obj\Debug\GenericRepository.dll
+C:\Git\DoggySites\Doggy.Persistence.GenericRepository\GenericRepository\obj\Debug\GenericRepository.pdb
