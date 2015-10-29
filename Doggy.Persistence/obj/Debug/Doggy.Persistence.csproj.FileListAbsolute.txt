@@ -22,3 +22,6 @@ C:\GitHub\DoggySites\Doggy.Persistence\bin\Debug\GenericRepository.pdb
 C:\GitHub\DoggySites\Doggy.Persistence\bin\Debug\HtmlAgilityPack.pdb
 C:\GitHub\DoggySites\Doggy.Persistence\bin\Debug\HtmlAgilityPack.xml
 C:\GitHub\DoggySites\Doggy.Persistence\bin\Debug\Chronic.dll
+C:\GitHub\DoggySites\Doggy.Persistence\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\GitHub\DoggySites\Doggy.Persistence\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\GitHub\DoggySites\Doggy.Persistence\bin\Debug\Microsoft.Practices.ServiceLocation.xml

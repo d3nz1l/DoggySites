@@ -9,8 +9,13 @@
 
 namespace CliftonAgility.Controllers
 {
+    using System;
     using System.Threading.Tasks;
     using System.Web.Mvc;
+
+    using Aliencube.ReCaptcha;
+    using Aliencube.ReCaptcha.Wrapper;
+    using Aliencube.ReCaptcha.Wrapper.Interfaces;
 
     using CliftonAgility.Helpers;
     using CliftonAgility.Models.Contact;
@@ -21,6 +26,20 @@ namespace CliftonAgility.Controllers
     /// </summary>
     public class HomeController : Controller
     {
+        /// <summary>
+        /// The Recaptcha module.
+        /// </summary>
+        private readonly IReCaptchaV2 recaptcha;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="HomeController"/> class.
+        /// </summary>
+        /// <param name="recaptcha">The recaptcha.</param>
+        public HomeController(IReCaptchaV2 recaptcha)
+        {
+            this.recaptcha = recaptcha;
+        }
+
         /// <summary>
         /// The index.
         /// </summary>
@@ -95,6 +114,17 @@ namespace CliftonAgility.Controllers
                 return this.View(model);
             }
 
+            if (!await this.IsRecaptchaValidAsync())
+            {
+                this.ModelState.AddModelError("Recaptcha", "Please comfirm you are a person.");
+                return this.View(model);
+            }
+
+            if (model.MessageType == MessageType.SellUsSomthing)
+            {
+                return this.RedirectToAction("NoThanks");
+            }
+
             var siteEmailAddress = this.GetEmailAddressFromType(model.MessageType);
 
             var message = new ContactUsEmail(model.EmailAddress, siteEmailAddress)
@@ -118,6 +148,17 @@ namespace CliftonAgility.Controllers
             await Task.WhenAll(messageTask, confirmationTask);
 
             return this.View("ThankYou");
+        }
+        
+        /// <summary>
+        /// The contact.
+        /// </summary>
+        /// <returns>
+        /// The <see cref="ActionResult"/>.
+        /// </returns>
+        public ActionResult NoThanks()
+        {
+            return this.View();
         }
 
         /// <summary>
@@ -149,6 +190,28 @@ namespace CliftonAgility.Controllers
             }
 
             return emailAddress;
+        }
+
+        /// <summary>
+        /// Determines whether recaptcha is valid.
+        /// </summary>
+        /// <returns>
+        /// <c>true</c> if the captcha is valid.
+        /// </returns>
+        public async Task<bool> IsRecaptchaValidAsync()
+        {
+            try
+            {
+                var result = await this.recaptcha.SiteVerifyAsync(
+                        this.Request.Form,
+                        this.Request.ServerVariables);
+
+                return result.Success;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
 }

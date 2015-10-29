@@ -9,3 +9,10 @@ C:\GitHub\DoggySites\Domain\Email\bin\Debug\Microsoft.Practices.Unity.Registrati
 C:\GitHub\DoggySites\Domain\Email\obj\Debug\DoggySites.Email.dll
 C:\GitHub\DoggySites\Domain\Email\obj\Debug\DoggySites.Email.pdb
 C:\GitHub\DoggySites\Domain\Email\obj\Debug\Email.csprojResolveAssemblyReference.cache
+C:\GitHub\DoggySites\Domain\Email\bin\Debug\ARSoft.Tools.Net.dll
+C:\GitHub\DoggySites\Domain\Email\bin\Debug\BouncyCastle.Crypto.dll
+C:\GitHub\DoggySites\Domain\Email\bin\Debug\ARSoft.Tools.Net.xml
+C:\GitHub\DoggySites\Domain\Email\bin\Debug\BouncyCastle.Crypto.pdb
+C:\GitHub\DoggySites\Domain\Email\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\GitHub\DoggySites\Domain\Email\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\GitHub\DoggySites\Domain\Email\bin\Debug\Microsoft.Practices.ServiceLocation.xml

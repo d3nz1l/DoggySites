@@ -4,8 +4,6 @@ using Microsoft.Practices.Unity.Configuration;
 
 namespace BristolBallistics.App_Start
 {
-    using ServiceLayer;
-
     /// <summary>
     /// Specifies the Unity configuration for the main container.
     /// </summary>
@@ -15,7 +13,6 @@ namespace BristolBallistics.App_Start
         private static Lazy<IUnityContainer> container = new Lazy<IUnityContainer>(() =>
         {
             var container = new UnityContainer();
-            RegisterExtensions(container);
             RegisterTypes(container);
             return container;
         });
@@ -35,15 +32,11 @@ namespace BristolBallistics.App_Start
         /// change the defaults), as Unity allows resolving a concrete type even if it was not previously registered.</remarks>
         public static void RegisterTypes(IUnityContainer container)
         {
-        }
+            // NOTE: To load from web.config uncomment the line below. Make sure to add a Microsoft.Practices.Unity.Configuration to the using statements.
+            // container.LoadConfiguration();
 
-        /// <summary>
-        /// Registers the extensions.
-        /// </summary>
-        /// <param name="container">The container.</param>
-        public static void RegisterExtensions(IUnityContainer container)
-        {
-            container.AddNewExtension<ServiceLayerUnityExtension>();
+            // TODO: Register your types here
+            // container.RegisterType<IProductRepository, ProductRepository>();
         }
     }
 }

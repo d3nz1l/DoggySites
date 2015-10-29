@@ -72,6 +72,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\EmailValidatorAttribute.cs" />
     <Compile Include="Enumerations\DogBreeds.cs" />
     <Compile Include="Enumerations\DogGender.cs" />
     <Compile Include="HtmlHelpers\GoogleMapsHelpers.cs" />
@@ -88,6 +89,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\Email\Email.csproj">
+      <Project>{f7f91e2f-1926-49c1-974f-a2b4e3005667}</Project>
+      <Name>Email</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

@@ -23,7 +23,5 @@ namespace ServiceLayer.Services
             this.teamEntityRepository = teamEntityRepository;
             this.bfaTeamRepository = bfaTeamRepository;
         }
-
-        public 
     }
 }

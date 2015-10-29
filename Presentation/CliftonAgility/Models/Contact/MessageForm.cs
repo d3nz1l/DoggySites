@@ -11,6 +11,8 @@ namespace CliftonAgility.Models.Contact
 {
     using System.ComponentModel.DataAnnotations;
 
+    using DoggySites.Presentation.Common.Attributes;
+
     /// <summary>
     /// The message form.
     /// </summary>
@@ -29,7 +31,7 @@ namespace CliftonAgility.Models.Contact
         /// </summary>
         [DataType(DataType.EmailAddress)]
         [Required(ErrorMessage = "Please give us your email address, as we will need to be able reply.")]
-        [EmailAddress(ErrorMessage = "Please check your email address, it appears to wrong.")]
+        [EmailValidator(ErrorMessage = "Please check your email address, it appears to wrong.")]
         [Display(Name = "Email Address:")]
         public string EmailAddress { get; set; }
 

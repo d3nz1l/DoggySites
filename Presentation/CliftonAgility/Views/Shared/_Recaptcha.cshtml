@@ -1,0 +1,7 @@
+﻿@using Aliencube.ReCaptcha.Wrapper
+@using Aliencube.ReCaptcha.Wrapper.Mvc
+@using Aliencube.ReCaptcha.Wrapper.Mvc.Parameters
+
+@model Aliencube.ReCaptcha.Wrapper.Interfaces.IReCaptchaV2Settings
+
+@Html.ReCaptcha(new RenderParameters { SiteKey = Model.SiteKey, Theme = RenderThemeType.Light})

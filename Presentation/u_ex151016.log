@@ -1,0 +1,77 @@
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2015-10-16 00:08:47
+#Fields: date time s-sitename s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2015-10-16 00:08:46 W3SVC77 92.53.241.26 GET / - 80 - 188.143.232.40 Mozilla/4.0+(compatible;+MSIE+6.0;+Windows+NT+5.1;+SV1) - 200 0 0 8065 211 140
+2015-10-16 00:08:47 W3SVC77 92.53.241.26 GET /about-us - 80 - 188.143.232.40 Mozilla/4.0+(compatible;+MSIE+6.0;+Windows+NT+5.1;+SV1) - 200 0 0 11022 219 109
+2015-10-16 00:08:47 W3SVC77 92.53.241.26 GET /find-us - 80 - 188.143.232.40 Mozilla/4.0+(compatible;+MSIE+6.0;+Windows+NT+5.1;+SV1) - 200 0 0 7186 218 140
+2015-10-16 00:08:47 W3SVC77 92.53.241.26 GET /contact-us - 80 - 188.143.232.40 Mozilla/4.0+(compatible;+MSIE+6.0;+Windows+NT+5.1;+SV1) - 200 0 0 11781 221 125
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2015-10-16 02:39:50
+#Fields: date time s-sitename s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2015-10-16 02:39:50 W3SVC77 92.53.241.26 GET /Contact - 80 - 66.249.67.253 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 200 0 0 1825 305 14874
+2015-10-16 02:52:14 W3SVC77 92.53.241.26 GET / - 80 - 66.249.67.245 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+8_3+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12F70+Safari/600.1.4+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 200 0 0 3149 420 125
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2015-10-16 03:23:10
+#Fields: date time s-sitename s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2015-10-16 03:23:09 W3SVC77 92.53.241.26 GET /Committee - 80 - 144.76.155.8 Mozilla/5.0+(X11;+Ubuntu;+Linux+i686;+rv:14.0)+Gecko/20100101+Firefox/14.0.1 - 200 0 64 0 186 14812
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2015-10-16 04:45:16
+#Fields: date time s-sitename s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2015-10-16 04:45:15 W3SVC77 92.53.241.26 GET /robots.txt - 80 - 180.76.15.18 Mozilla/5.0+(Windows+NT+5.1;+rv:6.0.2)+Gecko/20100101+Firefox/6.0.2 - 200 0 0 1844 196 296
+2015-10-16 04:45:15 W3SVC77 92.53.241.26 GET /robots.txt - 80 - 180.76.15.12 Mozilla/5.0+(Windows+NT+5.1;+rv:6.0.2)+Gecko/20100101+Firefox/6.0.2 - 200 0 0 1844 196 328
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2015-10-16 05:12:07
+#Fields: date time s-sitename s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2015-10-16 05:12:07 W3SVC77 92.53.241.26 GET /robots.txt - 80 - 207.46.13.134 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - 200 0 0 4647 276 187
+2015-10-16 05:15:15 W3SVC77 92.53.241.26 GET /Scripts/jquery.validate.js - 80 - 180.76.15.137 Mozilla/5.0+(compatible;+Baiduspider/2.0;++http://www.baidu.com/search/spider.html) - 200 0 0 12152 334 546
+2015-10-16 05:29:06 W3SVC77 92.53.241.26 GET /robots.txt - 80 - 66.249.67.202 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 301 0 0 433 261 93
+2015-10-16 05:29:06 W3SVC77 92.53.241.26 GET /404 404;http://cliftonagility.co.uk:80/robots.txt 80 - 66.249.67.253 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 200 0 0 1825 304 109
+2015-10-16 05:29:06 W3SVC77 92.53.241.26 GET /Committee - 80 - 66.249.67.202 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 301 0 0 353 303 93
+2015-10-16 05:29:21 W3SVC77 92.53.241.26 GET /Committee - 80 - 66.249.67.136 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 200 0 0 1825 307 14843
+2015-10-16 05:29:49 W3SVC77 92.53.241.26 GET /about-us - 80 - 207.46.13.134 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+7_0+like+Mac+OS+X)+AppleWebKit/537.51.1+(KHTML,+like+Gecko)+Version/7.0+Mobile/11A465+Safari/9537.53+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - 200 0 0 3383 411 187
+2015-10-16 05:32:23 W3SVC77 92.53.241.26 GET /robots.txt - 80 - 144.76.7.107 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 200 0 0 4666 185 46
+2015-10-16 05:32:39 W3SVC77 92.53.241.26 GET /Competition/KennelClub - 80 - 144.76.7.107 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 200 0 0 4666 408 14765
+2015-10-16 05:32:55 W3SVC77 92.53.241.26 GET /Competition/UKAgility - 80 - 144.76.7.107 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 200 0 0 4666 430 14765
+2015-10-16 05:32:56 W3SVC77 92.53.241.26 GET /Competition/WraxallShow - 80 - 144.76.7.107 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 200 0 0 4666 432 31
+2015-10-16 05:32:57 W3SVC77 92.53.241.26 GET /Content/css v=VpYPynkwtaxXBBv4n2ZdpLi7GZO8Uyu8c3-EDj6kwjY1 80 - 207.46.13.110 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+7_0+like+Mac+OS+X)+AppleWebKit/537.51.1+(KHTML,+like+Gecko)+Version/7.0+Mobile/11A465+Safari/9537.53+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - 200 0 0 24540 429 468
+2015-10-16 05:32:57 W3SVC77 92.53.241.26 GET /bundles/vendor v=49T1EECKwxxHz7Qgt-KPLMP5C0GZ8MGHoj_4udOoEKk1 80 - 207.46.13.110 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+7_0+like+Mac+OS+X)+AppleWebKit/537.51.1+(KHTML,+like+Gecko)+Version/7.0+Mobile/11A465+Safari/9537.53+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - 200 0 0 69318 432 343
+2015-10-16 05:32:57 W3SVC77 92.53.241.26 GET /ContactUs/General Length=9 80 - 144.76.7.107 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 200 0 0 4666 435 46
+2015-10-16 05:33:00 W3SVC77 92.53.241.26 GET /ContactUs/Membership Length=9 80 - 144.76.7.107 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 200 0 0 4666 438 46
+2015-10-16 05:33:16 W3SVC77 92.53.241.26 GET /ContactUs/MembershipForm Length=9 80 - 144.76.7.107 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 200 0 0 4666 442 14765
+2015-10-16 05:33:17 W3SVC77 92.53.241.26 GET /Help - 80 - 144.76.7.107 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 200 0 0 4666 413 31
+2015-10-16 05:33:18 W3SVC77 92.53.241.26 GET /Home/ChristmasMeal - 80 - 144.76.7.107 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 200 0 0 4666 427 46
+2015-10-16 05:33:20 W3SVC77 92.53.241.26 GET /Location/Directions/1 - 80 - 144.76.7.107 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 200 0 0 4666 430 31
+2015-10-16 05:33:21 W3SVC77 92.53.241.26 GET /Location/Directions/34 - 80 - 144.76.7.107 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 200 0 0 4666 431 31
+2015-10-16 05:33:22 W3SVC77 92.53.241.26 GET /Member/Forms - 80 - 144.76.7.107 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 200 0 0 4666 421 31
+2015-10-16 05:33:24 W3SVC77 92.53.241.26 GET /Member/Help - 80 - 144.76.7.107 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 200 0 0 4666 420 31
+2015-10-16 05:34:06 W3SVC77 92.53.241.26 GET /robots.txt - 80 - 207.46.13.134 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - 200 0 0 1825 257 156
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2015-10-16 06:30:58
+#Fields: date time s-sitename s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2015-10-16 06:30:58 W3SVC77 92.53.241.26 GET /bundles/modernizr v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1 80 - 199.30.25.170 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+7_0+like+Mac+OS+X)+AppleWebKit/537.51.1+(KHTML,+like+Gecko)+Version/7.0+Mobile/11A465+Safari/9537.53+BingPreview/1.0b http://www.cliftonagility.co.uk/about-us 200 0 0 4916 376 171
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2015-10-16 09:18:01
+#Fields: date time s-sitename s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2015-10-16 09:18:01 W3SVC77 92.53.241.26 GET /sitemap.xml - 80 - 66.249.67.136 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 200 0 0 1825 249 4000
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2015-10-16 09:41:37
+#Fields: date time s-sitename s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2015-10-16 09:41:36 W3SVC77 92.53.241.26 GET /robots.txt - 80 - 159.203.96.60 Mozilla/5.0+(compatible;+spbot/4.4.2;++http://OpenLinkProfiler.org/bot+) - 301 0 0 452 290 140
+2015-10-16 09:41:36 W3SVC77 92.53.241.26 GET /404 404;http://cliftonagility.co.uk:80/robots.txt 80 - 159.203.96.60 Mozilla/5.0+(compatible;+spbot/4.4.2;++http://OpenLinkProfiler.org/bot+) - 200 0 0 1844 333 109
+2015-10-16 09:41:44 W3SVC77 92.53.241.26 GET / - 80 - 159.203.96.60 Mozilla/5.0+(compatible;+spbot/4.4.2;++http://OpenLinkProfiler.org/bot+) - 200 0 0 3168 284 2390
+2015-10-16 09:41:45 W3SVC77 92.53.241.26 GET /find-us - 80 - 159.203.96.60 Mozilla/5.0+(compatible;+spbot/4.4.2;++http://OpenLinkProfiler.org/bot+) http://www.cliftonagility.co.uk/ 200 0 0 2905 334 171
+2015-10-16 09:41:47 W3SVC77 92.53.241.26 GET /about-us - 80 - 159.203.96.60 Mozilla/5.0+(compatible;+spbot/4.4.2;++http://OpenLinkProfiler.org/bot+) http://www.cliftonagility.co.uk/ 200 0 0 3402 335 170
+2015-10-16 09:41:51 W3SVC77 92.53.241.26 GET /contact-us - 80 - 159.203.96.60 Mozilla/5.0+(compatible;+spbot/4.4.2;++http://OpenLinkProfiler.org/bot+) http://www.cliftonagility.co.uk/ 200 0 0 3604 337 281
+2015-10-16 09:41:57 W3SVC77 92.53.241.26 GET /maps/Chelvey - 80 - 159.203.96.60 Mozilla/5.0+(compatible;+spbot/4.4.2;++http://OpenLinkProfiler.org/bot+) http://www.cliftonagility.co.uk/find-us 200 0 0 2822 346 374
+2015-10-16 09:42:01 W3SVC77 92.53.241.26 GET /membership-form - 80 - 159.203.96.60 Mozilla/5.0+(compatible;+spbot/4.4.2;++http://OpenLinkProfiler.org/bot+) http://www.cliftonagility.co.uk/ 200 0 0 3995 342 187
+2015-10-16 09:42:07 W3SVC77 92.53.241.26 GET /members/downloads - 80 - 159.203.96.60 Mozilla/5.0+(compatible;+spbot/4.4.2;++http://OpenLinkProfiler.org/bot+) http://www.cliftonagility.co.uk/ 200 0 0 2719 344 203
+2015-10-16 09:42:11 W3SVC77 92.53.241.26 GET /members/help-advice - 80 - 159.203.96.60 Mozilla/5.0+(compatible;+spbot/4.4.2;++http://OpenLinkProfiler.org/bot+) http://www.cliftonagility.co.uk/ 200 0 0 4023 346 187
+2015-10-16 09:42:16 W3SVC77 92.53.241.26 GET /members/club-clothing - 80 - 159.203.96.60 Mozilla/5.0+(compatible;+spbot/4.4.2;++http://OpenLinkProfiler.org/bot+) http://www.cliftonagility.co.uk/ 200 0 0 2802 348 156

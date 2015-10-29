@@ -87,3 +87,9 @@ C:\GitHub\DoggySites\Presentation\BristolBallistics\bin\Microsoft.Practices.Unit
 C:\GitHub\DoggySites\Presentation\BristolBallistics\bin\Doggy.Persistence.pdb
 C:\GitHub\DoggySites\Presentation\BristolBallistics\bin\GenericRepository.pdb
 C:\GitHub\DoggySites\Presentation\BristolBallistics\bin\Doggy.Persistence.Entities.pdb
+C:\GitHub\DoggySites\Presentation\BristolBallistics\bin\DoggySites.Email.dll
+C:\GitHub\DoggySites\Presentation\BristolBallistics\bin\ARSoft.Tools.Net.dll
+C:\GitHub\DoggySites\Presentation\BristolBallistics\bin\BouncyCastle.Crypto.dll
+C:\GitHub\DoggySites\Presentation\BristolBallistics\bin\DoggySites.Email.pdb
+C:\GitHub\DoggySites\Presentation\BristolBallistics\bin\ARSoft.Tools.Net.xml
+C:\GitHub\DoggySites\Presentation\BristolBallistics\bin\BouncyCastle.Crypto.pdb

@@ -1,0 +1,634 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Aliencube.ReCaptcha.Wrapper.Mvc</name>
+    </assembly>
+    <members>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderDataType">
+            <summary>
+            This specifies the data type for reCaptcha control.
+            </summary>
+            <remarks>More details: https://developers.google.com/recaptcha/docs/display#render_param</remarks>
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderDataType.Unknown">
+            <summary>
+            Identifies no data type is defined.
+            </summary>
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderDataType.Image">
+            <summary>
+            Identifies the image data type.
+            </summary>
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderDataType.Audio">
+            <summary>
+            Identifies the audio data type.
+            </summary>
+        </member>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.ApiJsRenderingOptions">
+            <summary>
+            This specifies JavaScript rendering options.
+            </summary>
+            <remarks>More details: https://developers.google.com/recaptcha/docs/display#auto_render</remarks>
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.ApiJsRenderingOptions.None">
+            <summary>
+            Identifies no rendering option is defined.
+            </summary>
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.ApiJsRenderingOptions.Async">
+            <summary>
+            Identifies asynchronous rendering option is defined.
+            </summary>
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.ApiJsRenderingOptions.Defer">
+            <summary>
+            Identifies deer rendering option is defined.
+            </summary>
+        </member>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.ResourceParameters">
+            <summary>
+            This represents the parameters entity to render api.js.
+            </summary>
+            <remarks>More details: https://developers.google.com/recaptcha/docs/display#js_param</remarks>
+            <summary>
+            This represents the parameters entity to render api.js.
+            </summary>
+            <remarks>More details: https://developers.google.com/recaptcha/docs/display#js_param</remarks>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.ResourceParameters.ShouldSerializeOnLoad">
+            <summary>
+            Checks whether the <c>OnLoad</c> property should be serialised or not.
+            </summary>
+            <returns>Returns <c>True</c>, if the <c>OnLoad</c> property is not null; otherwise returns <c>False</c>.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.ResourceParameters.ShouldSerializeRender">
+            <summary>
+            Checks whether the <c>Render</c> property should be serialised or not.
+            </summary>
+            <returns>Returns <c>True</c>, if the <c>Render</c> property is other than <c>WidgetRenderType.Unknown</c>; otherwise returns <c>False</c>.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.ResourceParameters.ShouldSerializeLanguageCode">
+            <summary>
+            Checks whether the <c>LanguageCode</c> property should be serialised or not.
+            </summary>
+            <returns>Returns <c>True</c>, if the <c>LanguageCode</c> property is other than <c>WidgetLanguageCode.Unknown</c>; otherwise returns <c>False</c>.</returns>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.ResourceParameters.OnLoad">
+            <summary>
+            Gets or sets the callback method name on load.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.ResourceParameters.Render">
+            <summary>
+            Gets or sets the render option.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.ResourceParameters.LanguageCode">
+            <summary>
+            Gets or sets the language code to display reCaptcha control.
+            </summary>
+        </member>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode">
+            <summary>
+            This specifies the language code for reCaptcha control rendering.
+            </summary>
+            <remarks>More details: https://developers.google.com/recaptcha/docs/display#js_param</remarks>
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Unknown">
+            <summary>
+            Identifies no language code is defined.
+            </summary>
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Arabic">
+            
+             Identifies the display language in Arabic.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Bulgarian">
+            
+             Identifies the display language in Bulgarian.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Catalan">
+            
+             Identifies the display language in Catalan.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Chinese_Simplified">
+            
+             Identifies the display language in Chinese (Simplified).
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Chinese_Traditional">
+            
+             Identifies the display language in Chinese (Traditional).
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Croatian">
+            
+             Identifies the display language in Croatian.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Czech">
+            
+             Identifies the display language in Czech.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Danish">
+            
+             Identifies the display language in Danish.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Dutch">
+            
+             Identifies the display language in Dutch.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.English_UK">
+            
+             Identifies the display language in English (UK).
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.English_US">
+            
+             Identifies the display language in English (US).
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Filipino">
+            
+             Identifies the display language in Filipino.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Finnish">
+            
+             Identifies the display language in Finnish.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.French">
+            
+             Identifies the display language in French.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.French_Canadian">
+            
+             Identifies the display language in French (Canadian).
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.German">
+            
+             Identifies the display language in German.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.German_Austria">
+            
+             Identifies the display language in German (Austria).
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.German_Switzerland">
+            
+             Identifies the display language in German (Switzerland).
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Greek">
+            
+             Identifies the display language in Greek.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Hebrew">
+            
+             Identifies the display language in Hebrew.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Hindi">
+            
+             Identifies the display language in Hindi.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Hungarain">
+            
+             Identifies the display language in Hungarain.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Indonesian">
+            
+             Identifies the display language in Indonesian.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Italian">
+            
+             Identifies the display language in Italian.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Japanese">
+            
+             Identifies the display language in Japanese.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Korean">
+            
+             Identifies the display language in Korean.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Latvian">
+            
+             Identifies the display language in Latvian.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Lithuanian">
+            
+             Identifies the display language in Lithuanian.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Norwegian">
+            
+             Identifies the display language in Norwegian.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Persian">
+            
+             Identifies the display language in Persian.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Polish">
+            
+             Identifies the display language in Polish.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Portuguese">
+            
+             Identifies the display language in Portuguese.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Portuguese_Brazil">
+            
+             Identifies the display language in Portuguese (Brazil).
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Portuguese_Portugal">
+            
+             Identifies the display language in Portuguese (Portugal).
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Romanian">
+            
+             Identifies the display language in Romanian.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Russian">
+            
+             Identifies the display language in Russian.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Serbian">
+            
+             Identifies the display language in Serbian.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Slovak">
+            
+             Identifies the display language in Slovak.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Slovenian">
+            
+             Identifies the display language in Slovenian.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Spanish">
+            
+             Identifies the display language in Spanish.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Spanish_Latin_America">
+            
+             Identifies the display language in Spanish (Latin America).
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Swedish">
+            
+             Identifies the display language in Swedish.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Thai">
+            
+             Identifies the display language in Thai.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Turkish">
+            
+             Identifies the display language in Turkish.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Ukrainian">
+            
+             Identifies the display language in Ukrainian.
+            
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetLanguageCode.Vietnamese">
+            
+             Identifies the display language in Vietnamese.
+            
+        </member>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaApiJsExtensions">
+            <summary>
+            This represents the entity for <c>ReCaptcha</c> api.js extensions.
+            </summary>
+            <remarks>More details: https://developers.google.com/recaptcha/docs/display</remarks>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaApiJsExtensions.ReCaptchaApiJs(System.Web.Mvc.HtmlHelper,System.String)">
+            <summary>
+            Renders the JavaScript control to render the reCaptcha HTML control.
+            </summary>
+            <param name="htmlHelper"><c>HtmlHelper</c> instance.</param>
+            <param name="src">JavaScript reference source.</param>
+            <returns>Returns the JavaScript control to render the reCaptcha HTML control.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaApiJsExtensions.ReCaptchaApiJs(System.Web.Mvc.HtmlHelper,System.String,Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.ApiJsRenderingOptions)">
+            <summary>
+            Renders the JavaScript control to render the reCaptcha HTML control.
+            </summary>
+            <param name="htmlHelper"><c>HtmlHelper</c> instance.</param>
+            <param name="src">JavaScript reference source.</param>
+            <param name="options"><c>JsRenderingOptions</c> enum value.</param>
+            <returns>Returns the JavaScript control to render the reCaptcha HTML control.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaApiJsExtensions.ReCaptchaApiJs(System.Web.Mvc.HtmlHelper,System.String,Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.ApiJsRenderingOptions,Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.ResourceParameters)">
+            <summary>
+            Renders the JavaScript control to render the reCaptcha HTML control.
+            </summary>
+            <param name="htmlHelper"><c>HtmlHelper</c> instance.</param>
+            <param name="src">JavaScript reference source.</param>
+            <param name="options"><c>JsRenderingOptions</c> enum value.</param>
+            <param name="parameters"><c>ResourceParameters</c> instance.</param>
+            <returns>Returns the JavaScript control to render the reCaptcha HTML control.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaApiJsExtensions.ReCaptchaApiJs(System.Web.Mvc.HtmlHelper,System.Object)">
+            <summary>
+            Renders the reCaptcha HTML control.
+            </summary>
+            <param name="htmlHelper"><c>HtmlHelper</c> instance.</param>
+            <param name="htmlAttributes">List of HTML attributes.</param>
+            <returns>Returns the reCaptcha HTML control.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaApiJsExtensions.ReCaptchaApiJs(System.Web.Mvc.HtmlHelper,System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Renders the reCaptcha HTML control.
+            </summary>
+            <param name="htmlHelper"><c>HtmlHelper</c> instance.</param>
+            <param name="htmlAttributes">List of HTML attributes.</param>
+            <returns>Returns the reCaptcha HTML control.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaApiJsExtensions.ReCaptchaApiJs(System.Web.Mvc.HtmlHelper,System.Object,Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.ApiJsRenderingOptions)">
+            <summary>
+            Renders the reCaptcha HTML control.
+            </summary>
+            <param name="htmlHelper"><c>HtmlHelper</c> instance.</param>
+            <param name="htmlAttributes">List of HTML attributes.</param>
+            <param name="options"><c>JsRenderingOptions</c> enum value.</param>
+            <returns>Returns the reCaptcha HTML control.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaApiJsExtensions.ReCaptchaApiJs(System.Web.Mvc.HtmlHelper,System.Collections.Generic.IDictionary{System.String,System.Object},Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.ApiJsRenderingOptions)">
+            <summary>
+            Renders the reCaptcha HTML control.
+            </summary>
+            <param name="htmlHelper"><c>HtmlHelper</c> instance.</param>
+            <param name="htmlAttributes">List of HTML attributes.</param>
+            <param name="options"><c>JsRenderingOptions</c> enum value.</param>
+            <returns>Returns the reCaptcha HTML control.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaApiJsExtensions.ReCaptchaApiJs(System.Web.Mvc.HtmlHelper,System.Collections.Generic.IDictionary{System.String,System.Object},Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.ApiJsRenderingOptions,Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.ResourceParameters)">
+            <summary>
+            Renders the reCaptcha HTML control.
+            </summary>
+            <param name="htmlHelper"><c>HtmlHelper</c> instance.</param>
+            <param name="htmlAttributes">List of HTML attributes.</param>
+            <param name="options"><c>JsRenderingOptions</c> enum value.</param>
+            <param name="parameters"><c>ResourceParameters</c> instance.</param>
+            <returns>Returns the reCaptcha HTML control.</returns>
+        </member>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaCallbackJsExtensions">
+            <summary>
+            This represents the entity for <c>ReCaptcha</c> callback extensions.
+            </summary>
+            <remarks>More details: https://developers.google.com/recaptcha/docs/display</remarks>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaCallbackJsExtensions.ReCaptchaCallbackJs(System.Web.Mvc.HtmlHelper,System.String,System.String,Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderParameters)">
+            <summary>
+            Renders the reCaptcha callback script.
+            </summary>
+            <param name="htmlHelper"><c>HtmlHelper</c> instance.</param>
+            <param name="callback">Name of callback function.</param>
+            <param name="elementId">Id of the placeholder element.</param>
+            <param name="parameters"><c>RenderParameters</c> instance.</param>
+            <returns>Returns the reCaptcha callback script.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaCallbackJsExtensions.GetCallbackScript(System.String,System.String,Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderParameters)">
+            <summary>
+            Gets the callback script.
+            </summary>
+            <param name="callback">Name of callback function.</param>
+            <param name="elementId">Id of the placeholder element.</param>
+            <param name="parameters"><c>RenderParameters</c> instance.</param>
+            <returns>Returns the callback script.</returns>
+        </member>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaExtensions">
+            <summary>
+            This represents the entity for <c>ReCaptcha</c> extensions.
+            </summary>
+            <remarks>More details: https://developers.google.com/recaptcha/docs/display</remarks>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaExtensions.ReCaptcha(System.Web.Mvc.HtmlHelper,System.String)">
+            <summary>
+            Renders the reCaptcha HTML control.
+            </summary>
+            <param name="htmlHelper"><c>HtmlHelper</c> instance.</param>
+            <param name="siteKey">reCaptcha site key.</param>
+            <returns>Returns the reCaptcha HTML control.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaExtensions.ReCaptcha(System.Web.Mvc.HtmlHelper,System.String,System.Object)">
+            <summary>
+            Renders the reCaptcha HTML control.
+            </summary>
+            <param name="htmlHelper"><c>HtmlHelper</c> instance.</param>
+            <param name="siteKey">reCaptcha site key.</param>
+            <param name="htmlAttributes">List of HTML attributes.</param>
+            <returns>Returns the reCaptcha HTML control.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaExtensions.ReCaptcha(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Renders the reCaptcha HTML control.
+            </summary>
+            <param name="htmlHelper"><c>HtmlHelper</c> instance.</param>
+            <param name="siteKey">reCaptcha site key.</param>
+            <param name="htmlAttributes">List of HTML attributes.</param>
+            <returns>Returns the reCaptcha HTML control.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaExtensions.ReCaptcha(System.Web.Mvc.HtmlHelper,Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderParameters)">
+            <summary>
+            Renders the reCaptcha HTML control.
+            </summary>
+            <param name="htmlHelper"><c>HtmlHelper</c> instance.</param>
+            <param name="parameters"><c>ReCaptchaParameters</c> object.</param>
+            <returns>Returns the reCaptcha HTML control.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaExtensions.ReCaptcha(System.Web.Mvc.HtmlHelper,Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderParameters,System.Object)">
+            <summary>
+            Renders the reCaptcha HTML control.
+            </summary>
+            <param name="htmlHelper"><c>HtmlHelper</c> instance.</param>
+            <param name="parameters"><c>ReCaptchaParameters</c> object.</param>
+            <param name="htmlAttributes">List of HTML attributes.</param>
+            <returns>Returns the reCaptcha HTML control.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.ReCaptchaExtensions.ReCaptcha(System.Web.Mvc.HtmlHelper,Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderParameters,System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Renders the reCaptcha HTML control.
+            </summary>
+            <param name="htmlHelper"><c>HtmlHelper</c> instance.</param>
+            <param name="htmlAttributes">List of HTML attributes.</param>
+            <param name="parameters"><c>ReCaptchaParameters</c> object.</param>
+            <returns>Returns the reCaptcha HTML control.</returns>
+        </member>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.Mvc.Extensions.ParametersExtensions">
+            <summary>
+            This represents the extension class for the parameters class.
+            </summary>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.Extensions.ParametersExtensions.ToDictionary``3(``0)">
+            <summary>
+            Converts the <c>RenderParameters</c> instance to <c>Dictionary{TKey, TValue}</c>.
+            </summary>
+            <typeparam name="TParam">Parameters type parameter.</typeparam>
+            <typeparam name="TKey">Key type parameter.</typeparam>
+            <typeparam name="TValue">Value type parameter.</typeparam>
+            <param name="value"><c>RenderParameters</c> instance.</param>
+            <returns>Returns <c>Dictionary{TKey, TValue}</c> object converted.</returns>
+        </member>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderParameters">
+            <summary>
+            This represents the parameter entity for reCaptcha rendering.
+            </summary>
+            <remarks>More details: https://developers.google.com/recaptcha/docs/display#render_param</remarks>
+            <summary>
+            This represents the parameter entity for reCaptcha rendering.
+            </summary>
+            <remarks>More details: https://developers.google.com/recaptcha/docs/display#render_param</remarks>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderParameters.ShouldSerializeTheme">
+            <summary>
+            Checks whether the <c>Theme</c> property should be serialised or not.
+            </summary>
+            <returns>Returns <c>True</c>, if the <c>Theme</c> property is not null; otherwise returns <c>False</c>.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderParameters.ShouldSerializeDataType">
+            <summary>
+            Checks whether the <c>DataType</c> property should be serialised or not.
+            </summary>
+            <returns>Returns <c>True</c>, if the <c>DataType</c> property is not null; otherwise returns <c>False</c>.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderParameters.ShouldSerializeTabIndex">
+            <summary>
+            Checks whether the <c>TabIndex</c> property should be serialised or not.
+            </summary>
+            <returns>Returns <c>True</c>, if the <c>TabIndex</c> property is not zero (0); otherwise returns <c>False</c>.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderParameters.ShouldSerializeCallback">
+            <summary>
+            Checks whether the <c>Callback</c> property should be serialised or not.
+            </summary>
+            <returns>Returns <c>True</c>, if the <c>Callback</c> property is not null; otherwise returns <c>False</c>.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderParameters.ShouldSerializeExpiredCallback">
+            <summary>
+            Checks whether the <c>ExpiredCallback</c> property should be serialised or not.
+            </summary>
+            <returns>Returns <c>True</c>, if the <c>ExpiredCallback</c> property is not null; otherwise returns <c>False</c>.</returns>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderParameters.SiteKey">
+            <summary>
+            Gets or sets the site key.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderParameters.Theme">
+            <summary>
+            Gets or sets the theme.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderParameters.DataType">
+            <summary>
+            Gets or sets the data type.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderParameters.TabIndex">
+            <summary>
+            Gets or sets the tab index.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderParameters.Callback">
+            <summary>
+            Gets or sets the callback.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderParameters.ExpiredCallback">
+            <summary>
+            Gets or sets the expired callback.
+            </summary>
+        </member>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderThemeType">
+            <summary>
+            This specifies the theme type for the reCaptcha control.
+            </summary>
+            <remarks>More details: https://developers.google.com/recaptcha/docs/display#render_param</remarks>
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderThemeType.Unknown">
+            <summary>
+            Identifies no theme is defined.
+            </summary>
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderThemeType.Light">
+            <summary>
+            Identifies the light theme.
+            </summary>
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.RenderThemeType.Dark">
+            <summary>
+            Identifies the dark theme.
+            </summary>
+        </member>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetRenderType">
+            <summary>
+            This specifies the reCaptcha control to render explicitly.
+            </summary>
+            <remarks>More details: https://developers.google.com/recaptcha/docs/display#js_param</remarks>
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetRenderType.Unknown">
+            <summary>
+            Identifies no rendering type is defined.
+            </summary>
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetRenderType.Onload">
+            <summary>
+            Identifies the widget is rendered onload.
+            </summary>
+        </member>
+        <member name="F:Aliencube.ReCaptcha.Wrapper.Mvc.Parameters.WidgetRenderType.Explicit">
+            <summary>
+            Identifies the widget is rendered explicitly.
+            </summary>
+        </member>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.Mvc.Extensions.TagBuilderExtensions">
+            <summary>
+            This represents the entity for <c>TagBuilder</c> extensions.
+            </summary>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Mvc.Extensions.TagBuilderExtensions.ToMvcHtmlString(System.Web.Mvc.TagBuilder,System.Web.Mvc.TagRenderMode)">
+            <summary>
+            Converts HTML strings from <c>TagBuilder</c> instance.
+            </summary>
+            <param name="builder"><c>TagBuilder</c> instance.</param>
+            <param name="renderMode"><c>TagRenderMode</c>.</param>
+            <returns>Returns HTML strings converted.</returns>
+        </member>
+    </members>
+</doc>

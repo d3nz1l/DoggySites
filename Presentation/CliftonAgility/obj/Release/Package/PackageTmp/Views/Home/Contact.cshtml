@@ -1,9 +1,14 @@
 ﻿@model CliftonAgility.Models.Contact.MessageForm
 
+@using Aliencube.ReCaptcha.Wrapper
+@using Aliencube.ReCaptcha.Wrapper.Mvc
+@using Aliencube.ReCaptcha.Wrapper.Mvc.Parameters
 @using CliftonAgility.Helpers
 @{
     ViewBag.Title = "Contact Us";
     ViewBag.HeaderText = "Got a question or comment? Let us know using the here.";
+
+    var captchaSettings = ReCaptchaV2Settings.CreateInstance();
 }
 
 <div class="row">
@@ -75,6 +80,23 @@
                 </div>
             </div>
             <div class="form-group">
+                <div class="col-sm-3">
+                    <label class="control-label">
+                        Confirm you are a person.
+                        <br/>
+                        <small>Sorry but we have had automated programs using this to spam us.</small>
+                    </label>
+                </div>
+                <div class="col-sm-9">
+                    <div class="input-group">
+                        @Html.Partial("_Recaptcha", captchaSettings)
+                    </div>
+                    <div class="error-message">
+                        @Html.ValidationMessage("Recaptcha")
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
                 <div class="col-sm-offset-3 col-sm-9">
                     <button type="submit" class="btn btn-success">Send Message<b class="glyphicon glyphicon-envelope"></b></button>
                 </div>
@@ -93,6 +115,8 @@
 
     </div>
 </div>
-<div class="row">
 
-</div>
+@section scripts
+{
+    @Html.ReCaptchaApiJs(captchaSettings.ApiUrl, ApiJsRenderingOptions.Defer | ApiJsRenderingOptions.Async)
+}

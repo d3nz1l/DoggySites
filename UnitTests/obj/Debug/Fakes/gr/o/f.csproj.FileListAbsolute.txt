@@ -1,6 +1,7 @@
 C:\GitHub\DoggySites\UnitTests\obj\Debug\Fakes\gr\b\GenericRepository.Fakes.xml
 C:\GitHub\DoggySites\UnitTests\obj\Debug\Fakes\gr\b\GenericRepository.Fakes.dll
 C:\GitHub\DoggySites\UnitTests\obj\Debug\Fakes\gr\b\GenericRepository.Fakes.pdb
+C:\GitHub\DoggySites\UnitTests\obj\Debug\Fakes\gr\b\Chronic.dll
 C:\GitHub\DoggySites\UnitTests\obj\Debug\Fakes\gr\b\Doggy.Persistence.dll
 C:\GitHub\DoggySites\UnitTests\obj\Debug\Fakes\gr\b\Doggy.Persistence.Entities.dll
 C:\GitHub\DoggySites\UnitTests\obj\Debug\Fakes\gr\b\EntityFramework.dll
@@ -19,4 +20,3 @@ C:\GitHub\DoggySites\UnitTests\obj\Debug\Fakes\gr\o\f.csprojResolveAssemblyRefer
 C:\GitHub\DoggySites\UnitTests\obj\Debug\Fakes\gr\o\GenericRepository.Fakes.rewritten
 C:\GitHub\DoggySites\UnitTests\obj\Debug\Fakes\gr\o\GenericRepository.Fakes.dll
 C:\GitHub\DoggySites\UnitTests\obj\Debug\Fakes\gr\o\GenericRepository.Fakes.pdb
-C:\GitHub\DoggySites\UnitTests\obj\Debug\Fakes\gr\b\Chronic.dll
