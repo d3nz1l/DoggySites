@@ -6,10 +6,12 @@
 //   The team.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
+
 namespace Doggy.Persistence.Entities.Flyball
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
 
     using GenericRepository;
 
@@ -18,15 +20,7 @@ namespace Doggy.Persistence.Entities.Flyball
     /// </summary>
     public class Team : IEntity<string>
     {
-        /// <summary>
-        /// Gets or sets the id.
-        /// </summary>
-        public string Id { get; set; }
-
-        /// <summary>
-        /// Gets or sets the name.
-        /// </summary>
-        public string Name { get; set; }
+        #region Public Properties
 
         /// <summary>
         /// Gets or sets the current seed time.
@@ -34,13 +28,36 @@ namespace Doggy.Persistence.Entities.Flyball
         public decimal CurrentSeedTime { get; set; }
 
         /// <summary>
-        /// Gets or sets the seed times.
+        /// Gets the fastest ever time.
         /// </summary>
-        public IEnumerable<RaceSeedTime> SeedTimes { get; set; }
+        public decimal FastestEverTime
+        {
+            get
+            {
+                return this.SeedTimes.Min(st => st.Time);
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the id.
+        /// </summary>
+        public string Id { get; set; }
 
         /// <summary>
         /// Gets or sets the last update.
         /// </summary>
         public DateTime LastUpdate { get; set; }
+
+        /// <summary>
+        /// Gets or sets the name.
+        /// </summary>
+        public string Name { get; set; }
+
+        /// <summary>
+        /// Gets or sets the seed times.
+        /// </summary>
+        public IEnumerable<RaceSeedTime> SeedTimes { get; set; }
+
+        #endregion
     }
 }

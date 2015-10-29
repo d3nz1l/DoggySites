@@ -23,5 +23,23 @@ namespace ServiceLayer.Services
             this.teamEntityRepository = teamEntityRepository;
             this.bfaTeamRepository = bfaTeamRepository;
         }
+
+        public async Task<IEnumerable<Team>> GetTeamsAsync()
+        {
+            var teams = await this.teamEntityRepository.GetAllAsync();
+            var updatedTeams = new List<Team>(teams.Count());
+
+            foreach (var team in teams)
+            {
+                if (team.LastUpdate < DateTime.Now.AddDays(-7))
+                {
+                    var updatedTeam = this.bfaTeamRepository.GetByIdAsync(team.Id);
+
+                    updatedTeams.Add();
+                }
+
+                updatedTeams.Add(team);
+            }
+        }
     }
 }
