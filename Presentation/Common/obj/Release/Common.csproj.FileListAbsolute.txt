@@ -8,3 +8,15 @@ C:\GitHub\DoggySites\Presentation\Common\bin\Release\System.Web.Mvc.xml
 C:\GitHub\DoggySites\Presentation\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
 C:\GitHub\DoggySites\Presentation\Common\obj\Release\DoggySites.Presentation.Common.dll
 C:\GitHub\DoggySites\Presentation\Common\obj\Release\DoggySites.Presentation.Common.pdb
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\DoggySites.Presentation.Common.dll.config
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\DoggySites.Email.dll
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\Microsoft.Practices.Unity.dll
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\ARSoft.Tools.Net.dll
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\BouncyCastle.Crypto.dll
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\DoggySites.Email.pdb
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\Microsoft.Practices.Unity.xml
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\ARSoft.Tools.Net.xml
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\Microsoft.Practices.ServiceLocation.xml
+C:\GitHub\DoggySites\Presentation\Common\bin\Release\BouncyCastle.Crypto.pdb

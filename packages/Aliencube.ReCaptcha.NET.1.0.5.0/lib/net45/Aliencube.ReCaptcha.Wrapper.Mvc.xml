@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Aliencube.ReCaptcha.Wrapper</name>
+    </assembly>
+    <members>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.Extensions.IEnumerableExtensions">
+            <summary>
+            This represents the entity for <c>Dictionary</c> extensions.
+            </summary>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Extensions.IEnumerableExtensions.Flatten``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}})">
+            <summary>
+            Flattens key/value pairs.
+            </summary>
+            <typeparam name="TKey">Key type parameter.</typeparam>
+            <typeparam name="TValue">Value type parameter.</typeparam>
+            <param name="values"><c>Dictionary</c> object.</param>
+            <returns>Returns the flattened key/value pairs.</returns>
+        </member>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.Interfaces.IReCaptchaV2">
+            <summary>
+            This provides interfaces to the <c>ReCaptchaV2</c> class.
+            </summary>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Interfaces.IReCaptchaV2.GetReCaptchaV2Request(System.Collections.Specialized.NameValueCollection,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Gets the <c>ReCaptchaV2Request</c> instance.
+            </summary>
+            <param name="form">Form values collection.</param>
+            <param name="serverVariables">Server variables collection.</param>
+            <returns>Returns the <c>ReCaptchaV2Request</c> instance.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Interfaces.IReCaptchaV2.SiteVerifyAsync(System.Collections.Specialized.NameValueCollection,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Verifies the request asynchronously.
+            </summary>
+            <param name="form">Form values collection.</param>
+            <param name="serverVariables">Server variables collection.</param>
+            <returns>Returns <c>ReCaptchaV2Response</c> object.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Interfaces.IReCaptchaV2.SiteVerifyAsync(Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Request)">
+            <summary>
+            Verifies the request asynchronously.
+            </summary>
+            <param name="request"><c>ReCaptchaV2Request</c> object.</param>
+            <returns>Returns <c>ReCaptchaV2Response</c> object.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Interfaces.IReCaptchaV2.GetResponseBodyAsync(Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Request)">
+            <summary>
+            Gets the response body as a JSON format asynchronously.
+            </summary>
+            <param name="request"><c>ReCaptchaV2Request</c> object.</param>
+            <returns>Returns the response body as a JSON format.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.Interfaces.IReCaptchaV2.GetRequestBody(Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Request)">
+            <summary>
+            Gets the request body.
+            </summary>
+            <param name="request"><c>ReCaptchaV2Request</c> object.</param>
+            <returns>Returns the request body.</returns>
+        </member>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.Interfaces.IReCaptchaV2Settings">
+            <summary>
+            This provides interfaces to the <c>ReCaptchaV2Settings</c> class.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.Interfaces.IReCaptchaV2Settings.RequestUrl">
+            <summary>
+            Gets or sets the request URL.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.Interfaces.IReCaptchaV2Settings.ApiUrl">
+            <summary>
+            Gets or sets the API URL used in JavaScript.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.Interfaces.IReCaptchaV2Settings.SiteKey">
+            <summary>
+            Gets or sets the site key for ReCaptcha.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.Interfaces.IReCaptchaV2Settings.SecretKey">
+            <summary>
+            Gets or sets the secret key for ReCaptcha.
+            </summary>
+        </member>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2">
+            <summary>
+            This represents the wrapper entity for ReCaptcha V2 API (https://google.com/recaptcha).
+            </summary>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2.#ctor(Aliencube.ReCaptcha.Wrapper.Interfaces.IReCaptchaV2Settings)">
+            <summary>
+            Initialises a new instance of the <c>ReCaptchaV2</c> class.
+            </summary>
+            <param name="settings"><c>ReCaptchaV2Settings</c> instance.</param>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2.GetReCaptchaV2Request(System.Collections.Specialized.NameValueCollection,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Gets the <c>ReCaptchaV2Request</c> instance.
+            </summary>
+            <param name="form">Form values collection.</param>
+            <param name="serverVariables">Server variables collection.</param>
+            <returns>Returns the <c>ReCaptchaV2Request</c> instance.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2.SiteVerifyAsync(System.Collections.Specialized.NameValueCollection,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Verifies the request asynchronously.
+            </summary>
+            <param name="form">Form values collection.</param>
+            <param name="serverVariables">Server variables collection.</param>
+            <returns>Returns <c>ReCaptchaV2Response</c> object.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2.SiteVerifyAsync(Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Request)">
+            <summary>
+            Verifies the request asynchronously.
+            </summary>
+            <param name="request"><c>ReCaptchaV2Request</c> object.</param>
+            <returns>Returns <c>ReCaptchaV2Response</c> object.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2.GetResponseBodyAsync(Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Request)">
+            <summary>
+            Gets the response body as a JSON format asynchronously.
+            </summary>
+            <param name="request"><c>ReCaptchaV2Request</c> object.</param>
+            <returns>Returns the response body as a JSON format.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2.GetRequestBody(Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Request)">
+            <summary>
+            Gets the request body.
+            </summary>
+            <param name="request"><c>ReCaptchaV2Request</c> object.</param>
+            <returns>Returns the request body.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Request">
+            <summary>
+            This represents the request entity for ReCaptcha V2.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Request.Secret">
+            <summary>
+            Gets or sets the secret key for ReCaptcha.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Request.Response">
+            <summary>
+            Gets or sets the response token provided by ReCaptcha.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Request.RemoteIp">
+            <summary>
+            Gets or sets the remote IP address.
+            </summary>
+        </member>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Response">
+            <summary>
+            This represents the response entity for ReCaptcha V2.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Response.Success">
+            <summary>
+            Gets or sets the value that specifies whether the request was successful or not.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Response.ErrorCodes">
+            <summary>
+            Gets or sets the list of error codes, if the request was not successful.
+            </summary>
+        </member>
+        <member name="T:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Settings">
+            <summary>
+            This represents the configuration section entity for ReCaptcha settings.
+            </summary>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Settings.CreateInstance">
+            <summary>
+            Creates a new instance of the <c>ReCaptchaV2Settings</c> class.
+            </summary>
+            <returns>Returns the new instance of the <c>ReCaptchaV2Settings</c> class.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Settings.GetFromConverterSettings">
+            <summary>
+            Gets the <c>ReCaptchaV2Settings</c> object from the reCaptchaV2Settings element.
+            </summary>
+            <returns>Returns the <c>ReCaptchaV2Settings</c> object.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Settings.GetFromAppSettings">
+            <summary>
+            Gets the <c>ReCaptchaV2Settings</c> object from the appSettings element.
+            </summary>
+            <returns>Returns the <c>ReCaptchaV2Settings</c> object.</returns>
+        </member>
+        <member name="M:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Settings.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Settings.RequestUrl">
+            <summary>
+            Gets or sets the request URL.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Settings.ApiUrl">
+            <summary>
+            Gets or sets the API URL used in JavaScript.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Settings.SiteKey">
+            <summary>
+            Gets or sets the site key for ReCaptcha.
+            </summary>
+        </member>
+        <member name="P:Aliencube.ReCaptcha.Wrapper.ReCaptchaV2Settings.SecretKey">
+            <summary>
+            Gets or sets the secret key for ReCaptcha.
+            </summary>
+        </member>
+    </members>
+</doc>

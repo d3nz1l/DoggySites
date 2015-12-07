@@ -32,7 +32,13 @@ namespace CliftonAgility.Models.Contact
         /// The comment.
         /// </summary>
         [Display(Name = "Send us a comment")]
-        Comment, 
+        Comment,
+
+        /// <summary>
+        /// The sell us.
+        /// </summary>
+        [Display(Name = "Sell us something/Make us an offer")]
+        SellUsSomthing,
 
         /// <summary>
         /// The other.

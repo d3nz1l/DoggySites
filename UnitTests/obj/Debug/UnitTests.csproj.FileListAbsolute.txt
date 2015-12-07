@@ -55,3 +55,6 @@ C:\GitHub\DoggySites\UnitTests\obj\Debug\UnitTests.dll
 C:\GitHub\DoggySites\UnitTests\obj\Debug\UnitTests.pdb
 C:\GitHub\DoggySites\UnitTests\bin\Debug\Chronic.dll
 C:\GitHub\DoggySites\UnitTests\obj\Debug\Fakes\gr\b\Chronic.dll
+C:\GitHub\DoggySites\UnitTests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\GitHub\DoggySites\UnitTests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\GitHub\DoggySites\UnitTests\bin\Debug\Microsoft.Practices.ServiceLocation.xml

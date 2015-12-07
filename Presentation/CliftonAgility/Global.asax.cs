@@ -8,6 +8,8 @@
 // --------------------------------------------------------------------------------------------------------------------
 namespace CliftonAgility
 {
+    using System;
+    using System.Diagnostics;
     using System.Globalization;
     using System.Web;
     using System.Web.Mvc;
@@ -36,7 +38,7 @@ namespace CliftonAgility
 
             var currentHost = context.Request.Url.Host.ToUpperInvariant();
 
-            if (currentHost.StartsWith("WWW"))
+            if (currentHost.StartsWith("WWW") || currentHost.Equals("localhost", StringComparison.OrdinalIgnoreCase))
             {
                 return;
             }
